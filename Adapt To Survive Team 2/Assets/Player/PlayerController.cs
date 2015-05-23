@@ -3,7 +3,6 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
-
     public float speed = 1;
     Rigidbody rb;
     private int numLanes = 3;
@@ -24,7 +23,7 @@ public class PlayerController : MonoBehaviour
         control.DoUpdate();
         if (control.ConsumeCommandStart(Controls.Command.LEFT) && lane > 0)
         {
-            Debug.Log("Jump!");
+            //Debug.Log("Jump!");
             lane--;
             StartCoroutine(UpdateLane());
             jumpDust.transform.eulerAngles = new Vector3(jumpDust.transform.eulerAngles.x, 90, jumpDust.transform.eulerAngles.z); //turn
@@ -33,7 +32,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (control.ConsumeCommandStart(Controls.Command.RIGHT) && lane < numLanes - 1)
         {
-            Debug.Log("Jump!");
+            //Debug.Log("Jump!");
             lane++;
             StartCoroutine(UpdateLane());
             jumpDust.transform.eulerAngles = new Vector3(jumpDust.transform.eulerAngles.x, 270, jumpDust.transform.eulerAngles.z); //turn
