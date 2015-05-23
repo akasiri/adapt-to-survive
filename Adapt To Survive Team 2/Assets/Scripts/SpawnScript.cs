@@ -23,7 +23,7 @@ public class SpawnScript : MonoBehaviour {
 		for (int i = 0; i < 10; i++) 
 		{
 			index = Random.Range(0,(Objects.Count-1));
-			Obstacles.Enqueue(Objects[2]);
+			Obstacles.Enqueue(Objects[index]);
 		}
 	}
 
@@ -41,7 +41,6 @@ public class SpawnScript : MonoBehaviour {
 	void SpawnObstacle(){
 		Vector3 newvec = new Vector3 (Random.Range (0, 2)*2, 5, 0);
 		GameObject newobj = (GameObject) Instantiate (Obstacles.Dequeue(), newvec, this.transform.rotation);
-
 		Destroy (newobj, 5f);
 		if (Obstacles.Count <= 2)
 			newQueue ();
