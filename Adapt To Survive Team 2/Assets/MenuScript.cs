@@ -5,7 +5,7 @@ public class MenuScript : MonoBehaviour {
 
 
 	public void StartGame(){
-		Application.LoadLevel ("ActualDerek");
+		Application.LoadLevel ("MainGamePlay");
 	}
 
 	
