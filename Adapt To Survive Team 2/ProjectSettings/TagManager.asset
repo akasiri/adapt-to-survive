@@ -10,6 +10,7 @@ TagManager:
   - Boulder
   - Pitfall
   - Predator
+  - PlayerParticleEffect
   layers:
   - Default
   - TransparentFX

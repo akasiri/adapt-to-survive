@@ -54,15 +54,19 @@ public class Obstacle : MonoBehaviour
         Debug.Log("Hit!");
 		if (coll.gameObject.tag == "Player") 
 		{
-			if (coll.gameObject.GetComponent<PlayerState>().animals != objectWeakness) 
-			{
-				// player die
-				coll.gameObject.GetComponent<PlayerDeath>().Die();
-			}
+            if (coll.gameObject.GetComponent<PlayerState>().animals != objectWeakness)
+            {
+                // player die
+                coll.gameObject.GetComponent<PlayerDeath>().Die();
+            }
+            else
+            {
+                OnDestroy(coll);
+            }
 		}
 	}
 
-    protected virtual void OnDestroy()
+    protected virtual void OnDestroy(Collider2D coll)
     {
         Destroy(this.gameObject);
     }

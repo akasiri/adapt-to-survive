@@ -7,7 +7,7 @@ public class MonkeyStateBehaviour : StateMachineBehaviour {
 
 	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-        foreach (ParticleSystem particle in GameObject.FindGameObjectWithTag(Tags.Player).GetComponentsInChildren<ParticleSystem>())
+        foreach (ParticleSystem particle in GameObject.FindGameObjectWithTag(Tags.PlayerParticleEffect).GetComponentsInChildren<ParticleSystem>())
                particle.startColor = color;
 	}
 
