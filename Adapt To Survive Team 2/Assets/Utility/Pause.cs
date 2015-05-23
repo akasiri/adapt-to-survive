@@ -46,8 +46,9 @@ public class Pause : MonoBehaviour {
     }
 
     //freeze time for a small amount in order to emphasize an impact or effect
-    public IEnumerator Freeze(float durationRealSeconds, float timeScale = 0f)
+    public static IEnumerator Freeze(float durationRealSeconds, float timeScale = 0f)
     {
+        Debug.Log("Freeze");
         if (frozen)
             yield break;
         frozen = true;

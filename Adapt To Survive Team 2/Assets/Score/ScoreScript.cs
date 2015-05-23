@@ -3,20 +3,32 @@ using System.Collections;
 using UnityEngine.UI;
 public class ScoreScript : MonoBehaviour {
     private Text text;
-    private float _score = 0;
-    private float highscore;
-    private bool highscoreBeaten = false;
-    public double Score
+    private static float _score = 0;
+    private static float highscore;
+    private static bool highscoreBeaten = false;
+    private ParticleSystem particle;
+    public static int Score
     {
-        get { return _score; }
+        get { return (int)_score; }
     }
+    public static int Highscore
+    {
+        get { 
+            return ((int)_score > (int)highscore) ? (int)_score : (int)highscore; }
+    }
+    public static bool HighscoreBeaten
+    {
+        get { return highscoreBeaten; }
+    }
+
 	// Use this for initialization
 	void Start () {
         text = GetComponent<Text>();
+        particle = transform.Find("DingSwirlGlow").GetComponent<ParticleSystem>();
         if (PlayerPrefs.HasKey(Options.HighScore)) // set scores from stored values
             highscore = PlayerPrefs.GetInt(Options.HighScore);
         else
-            highscore = 0;
+            highscore = 10;
 	}
 	
 	// Update is called once per frame
@@ -26,7 +38,24 @@ public class ScoreScript : MonoBehaviour {
         if ((int)(_score) > highscore && !highscoreBeaten)
         {
             highscoreBeaten = true;
+            Debug.Log("High Score Beaten!");
+            text.color = Color.green;
+            particle.Play();
+            StartCoroutine(ScreenShake.RandomShake(0.25f, 0.02f));
+            StartCoroutine(Pause.Freeze(.1f, 0.5f));
             //new highscore popup
         }
 	}
+
+    public void Save()
+    {
+        if (highscoreBeaten)
+            PlayerPrefs.SetInt(Options.HighScore, (int)_score);
+    }
+
+    public void Reset()
+    {
+        //should we have a reset?
+        //if we do, probably from the menu, so not now
+    }
 }
