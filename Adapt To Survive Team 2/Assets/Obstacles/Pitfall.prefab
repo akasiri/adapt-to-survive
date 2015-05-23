@@ -15,7 +15,7 @@ GameObject:
   - 114: {fileID: 11409954}
   m_Layer: 0
   m_Name: Pitfall
-  m_TagString: Untagged
+  m_TagString: Pitfall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
