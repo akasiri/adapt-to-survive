@@ -12,4 +12,5 @@ public static class Options
 {
     public const string SoundLevel = "SoundLevel";
     public const string MusicLevel = "MusicLevel";
+    public const string HighScore = "HighScore";
 }
