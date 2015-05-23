@@ -24,7 +24,6 @@ public class Controls : MonoBehaviour
     private Dictionary<Command, HashSet<KeyCode>> keyDict;	// stores association between commands and controller inputs
     private Dictionary<Command, bool> startDict;			// track newly issued commands
     private Dictionary<Command, bool> endDict;				// track newly ended commands
-    private Vector3 stickInput;
 
     // INITIALIZE
     void Awake()
@@ -33,7 +32,6 @@ public class Controls : MonoBehaviour
         keyDict = new Dictionary<Command, HashSet<KeyCode>>();
         startDict = new Dictionary<Command, bool>();
         endDict = new Dictionary<Command, bool>();
-        stickInput = Vector3.zero;
         InitializeKeyDict();
         InitializeHoldDict();
         InitializeStartDict();

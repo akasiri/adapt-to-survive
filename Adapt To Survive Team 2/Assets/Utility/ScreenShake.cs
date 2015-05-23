@@ -10,6 +10,7 @@ public class ScreenShake : MonoBehaviour {
 
     public static IEnumerator RandomShake(float duration, float magnitude)
     {
+        Debug.Log("Shake");
         while (duration > 0)
         {
             duration = duration - Time.deltaTime;
