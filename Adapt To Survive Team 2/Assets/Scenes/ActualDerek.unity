@@ -332,6 +332,10 @@ Prefab:
       propertyPath: gameOverDisplay
       value: 
       objectReference: {fileID: 193463639}
+    - target: {fileID: 19875160, guid: 3c7cbbdf55e07034e93ceca0ed832ad9, type: 2}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3c7cbbdf55e07034e93ceca0ed832ad9, type: 2}
   m_IsPrefabParent: 0
