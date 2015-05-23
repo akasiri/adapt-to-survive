@@ -12,6 +12,9 @@ GameObject:
   - 212: {fileID: 21220218}
   - 114: {fileID: 11430966}
   - 61: {fileID: 6152348}
+  - 114: {fileID: 11472842}
+  - 114: {fileID: 11473628}
+  - 114: {fileID: 11412740}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -117,6 +120,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   laneDistance: 2
+--- !u!114 &11412740
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 526a4dc96ae107f4c96d496e4477acdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11430966
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -128,6 +142,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4bafe030412ab34ba6c0c32fa8a6564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11472842
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16fd3d8f236f60b46bb1aa983514bf80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animals: 1
+--- !u!114 &11473628
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 204e4e9e19287434789559d6d9fdc107, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 109168}
+  background: {fileID: 0}
+  gameOverDisplay: {fileID: 0}
 --- !u!198 &19809670
 ParticleSystem:
   m_ObjectHideFlags: 1
