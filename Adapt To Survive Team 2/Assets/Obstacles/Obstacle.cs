@@ -44,12 +44,20 @@ public class Obstacle : MonoBehaviour
 	void OnTriggerEnter2D(Collider2D coll) 
 	{
         Debug.Log("Hit!");
+<<<<<<< HEAD
 		if (coll.gameObject.tag == "Player") 
 		{
 			if (coll.gameObject.GetComponent<PlayerState>().animals == objectWeakness) 
 			{
 				// obstacle die
                 OnDestroy();
+=======
+		if (coll.gameObject.tag == "Player") {
+			if (coll.gameObject.GetComponent<PlayerState>().animal == weakness) {
+				// if we generate new obstacles in the spawner, then destroy
+				// otherwise if we use an array in the spawner, then set the obstacle inactive
+                OnDestroy(); 
+>>>>>>> ebe64101baf385d7f262507d4fd3e37d07827dda
 			}
 			else 
 			{
