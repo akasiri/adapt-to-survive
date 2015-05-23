@@ -164,7 +164,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
 --- !u!224 &348760674 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 22456274, guid: 98079acc9015990489868c1461fc0943,
