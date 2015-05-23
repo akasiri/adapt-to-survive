@@ -45,7 +45,6 @@ public class Controls : MonoBehaviour
     {
         foreach (Command com in keyDict.Keys)
         {
-            Debug.Log(com);
                 if (GetCommand(com))
                 {			// if the command is being issued ...
                     if (holdDict[com] == 0f)
