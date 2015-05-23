@@ -1459,6 +1459,18 @@ Prefab:
       propertyPath: m_TagString
       value: PlayerParticleEffect
       objectReference: {fileID: 0}
+    - target: {fileID: 19991986, guid: 3c7cbbdf55e07034e93ceca0ed832ad9, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3eee0f0ddf411f74eb62a59cff2b30b3, type: 2}
+    - target: {fileID: 19938712, guid: 3c7cbbdf55e07034e93ceca0ed832ad9, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3eee0f0ddf411f74eb62a59cff2b30b3, type: 2}
+    - target: {fileID: 19957732, guid: 3c7cbbdf55e07034e93ceca0ed832ad9, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3eee0f0ddf411f74eb62a59cff2b30b3, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3c7cbbdf55e07034e93ceca0ed832ad9, type: 2}
   m_IsPrefabParent: 0
@@ -2649,6 +2661,10 @@ Prefab:
       propertyPath: m_Pivot.y
       value: .5
       objectReference: {fileID: 0}
+    - target: {fileID: 19979672, guid: 98079acc9015990489868c1461fc0943, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1780307af671cb245aad62d5ebf430a8, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 98079acc9015990489868c1461fc0943, type: 2}
   m_IsPrefabParent: 0
