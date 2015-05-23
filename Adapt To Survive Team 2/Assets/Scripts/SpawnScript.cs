@@ -24,6 +24,7 @@ public class SpawnScript : MonoBehaviour {
 		{
 			index = Random.Range(0,Objects.Count);
 			Obstacles.Enqueue(Objects[index]);
+            Debug.Log(Objects[index]);
 		}
 	}
 
