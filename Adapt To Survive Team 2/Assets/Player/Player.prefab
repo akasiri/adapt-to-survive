@@ -195,6 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 204e4e9e19287434789559d6d9fdc107, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mix: {fileID: 24519212, guid: 149fb6158759e6a449d084633d0ae9d3, type: 2}
   player: {fileID: 109168}
   background: {fileID: 0}
   gameOverDisplay: {fileID: 0}

@@ -9,7 +9,11 @@ public class Pause : MonoBehaviour {
     private static float? currentTimeScale;
     private static bool paused = false;
     private static bool frozen = false;
-	public void pause(bool toPause = true)
+    public void pause(bool toPause = true) //wrapper
+    {
+        staticPause(toPause);
+    }
+	public void staticPause(bool toPause = true)
     {
         Debug.Log("Pause");
         if (toPause && !paused)
@@ -28,8 +32,13 @@ public class Pause : MonoBehaviour {
         // maybe warnings if nothing will happen?
     }
 
+    public void unPause(bool toUnPause = true) //wrapper
+    {
+        staticUnPause(toUnPause);
+    }
+
     //inverse of Pause, basically.
-    public void unPause(bool toUnPause = true)
+    public static void staticUnPause(bool toUnPause = true)
     {
         if (!toUnPause && !paused)
         {

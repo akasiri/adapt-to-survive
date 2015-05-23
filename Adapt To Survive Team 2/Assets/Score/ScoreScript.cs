@@ -1,7 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 public class ScoreScript : MonoBehaviour {
+    public AudioMixerSnapshot mix;
+    public AudioMixerSnapshot defaultmix;
+
     private Text text;
     private static float _score = 0;
     private static float highscore;
@@ -43,9 +47,16 @@ public class ScoreScript : MonoBehaviour {
             particle.Play();
             StartCoroutine(ScreenShake.RandomShake(0.25f, 0.02f));
             StartCoroutine(Pause.Freeze(.1f, 0.5f));
+            mix.TransitionTo(0.5f);
+            Invoke("resetmix", 0.5f);
             //new highscore popup
         }
 	}
+
+    private void resetmix()
+    {
+        defaultmix.TransitionTo(0.5f);
+    }
 
     public void Save()
     {
