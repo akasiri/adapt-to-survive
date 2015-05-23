@@ -62,6 +62,7 @@ GameObject:
   - 4: {fileID: 427092}
   - 198: {fileID: 19833968}
   - 199: {fileID: 19979672}
+  - 114: {fileID: 11403816}
   m_Layer: 0
   m_Name: DingSwirlGlow
   m_TagString: Untagged
@@ -120,6 +121,19 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 0
+--- !u!114 &11403816
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 188890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84ab1161dbb632a4e98c4d7cda89d1da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xpos: .0399999991
+  ypos: .959999979
 --- !u!114 &11421862
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -162,9 +176,9 @@ ParticleSystem:
   startDelay: 0
   speed: 1
   randomSeed: 0
-  looping: 1
+  looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   moveWithTransform: 1
   InitialModule:
     enabled: 1
@@ -1215,9 +1229,9 @@ ParticleSystem:
   startDelay: 0
   speed: 1
   randomSeed: 0
-  looping: 1
+  looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   moveWithTransform: 1
   InitialModule:
     enabled: 1
