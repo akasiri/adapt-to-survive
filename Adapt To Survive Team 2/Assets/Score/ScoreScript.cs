@@ -63,11 +63,14 @@ public class ScoreScript : MonoBehaviour {
         if (highscoreBeaten)
             PlayerPrefs.SetInt(Options.HighScore, (int)_score);
         _score = 0;
+        highscoreBeaten = false;
     }
 
     public void Reset()
     {
-        //should we have a reset?
-        //if we do, probably from the menu, so not now
+        PlayerPrefs.SetInt(Options.HighScore, 10);
+        _score = 0;
+        highscore = 10;
+
     }
 }
