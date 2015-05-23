@@ -10,4 +10,11 @@ public class Restart : MonoBehaviour {
         mix.TransitionTo(0.01f);
         Application.LoadLevel(Application.loadedLevel);
 	}
+
+    public void GoToMainMenu()
+    {
+        Pause.staticUnPause();
+        mix.TransitionTo(0.01f);
+        Application.LoadLevel(Scenes.Menu);
+    }
 }

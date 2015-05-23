@@ -20,3 +20,8 @@ public static class Snapshots
     public const string Default = "Default";
     public const string Muffled = "Muffled";
 }
+
+public static class Scenes
+{
+    public const string Menu = "Menu";
+}

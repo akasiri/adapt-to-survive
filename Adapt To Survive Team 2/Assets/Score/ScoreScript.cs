@@ -47,15 +47,15 @@ public class ScoreScript : MonoBehaviour {
             particle.Play();
             StartCoroutine(ScreenShake.RandomShake(0.25f, 0.02f));
             StartCoroutine(Pause.Freeze(.1f, 0.5f));
-            mix.TransitionTo(0.5f);
-            Invoke("resetmix", 0.5f);
+            mix.TransitionTo(0.25f);
+            Invoke("resetmix", 0.25f);
             //new highscore popup
         }
 	}
 
     private void resetmix()
     {
-        defaultmix.TransitionTo(0.5f);
+        defaultmix.TransitionTo(0.25f);
     }
 
     public void Save()
