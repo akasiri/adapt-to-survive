@@ -166,6 +166,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b75ba15d8f4fb774ca8053c3e50e0df3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mix: {fileID: 24565202, guid: 149fb6158759e6a449d084633d0ae9d3, type: 2}
+  defaultmix: {fileID: 24500003, guid: 149fb6158759e6a449d084633d0ae9d3, type: 2}
 --- !u!198 &19803572
 ParticleSystem:
   m_ObjectHideFlags: 1
