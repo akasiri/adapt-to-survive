@@ -14,8 +14,9 @@ public class Obstacle : MonoBehaviour {
         Debug.Log("Hit!");
 		if (coll.gameObject.tag == "Player") {
 			if (coll.gameObject.GetComponent<PlayerState>().animal == weakness) {
-				// obstacle die
-                OnDestroy();
+				// if we generate new obstacles in the spawner, then destroy
+				// otherwise if we use an array in the spawner, then set the obstacle inactive
+                OnDestroy(); 
 			}
 			else {
 				// player die
