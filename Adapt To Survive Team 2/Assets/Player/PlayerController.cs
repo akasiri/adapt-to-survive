@@ -42,12 +42,12 @@ public class PlayerController : MonoBehaviour
         do
         {
             targetDistance = lane * laneDistance - this.transform.position.x;
-            this.transform.position = this.transform.position + new Vector3(targetDistance/2, 0, 0);
+            this.transform.position = this.transform.position + new Vector3(targetDistance / 2, this.transform.position.y, this.transform.position.z);
             yield return 0;
         }
         while (targetDistance > 0.1f);
 
-        this.transform.position = new Vector3(lane * laneDistance, 0, 0);
+        this.transform.position = new Vector3(lane * laneDistance, this.transform.position.y, this.transform.position.z);
 
         
     }
