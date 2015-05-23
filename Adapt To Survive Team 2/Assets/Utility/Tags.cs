@@ -25,3 +25,8 @@ public static class Scenes
 {
     public const string Menu = "Menu";
 }
+
+public class Parameters
+{
+    public static int State = Animator.StringToHash("State");
+}
