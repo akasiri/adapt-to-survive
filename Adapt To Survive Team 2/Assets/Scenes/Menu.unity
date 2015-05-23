@@ -120,7 +120,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -43, y: 7}
+  m_AnchoredPosition: {x: -13, y: 7}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &216180
@@ -236,7 +236,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -43, y: -128}
+  m_AnchoredPosition: {x: -13, y: -128}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &114124306
@@ -412,7 +412,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -43, y: -211}
+  m_AnchoredPosition: {x: -13, y: -211}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &247409906
@@ -965,6 +965,14 @@ Prefab:
     - target: {fileID: 455384, guid: b38af5de34ae29148bccd36d5f767e71, type: 2}
       propertyPath: m_LocalScale.z
       value: 9.61837387
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381222, guid: b38af5de34ae29148bccd36d5f767e71, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d097a47f7d7f5be409aff8c351a7c3a2, type: 2}
+    - target: {fileID: 11420536, guid: b38af5de34ae29148bccd36d5f767e71, type: 2}
+      propertyPath: speed
+      value: .100000001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b38af5de34ae29148bccd36d5f767e71, type: 2}
