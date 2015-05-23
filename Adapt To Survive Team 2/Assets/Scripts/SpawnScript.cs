@@ -39,7 +39,7 @@ public class SpawnScript : MonoBehaviour {
 	}
 
 	void SpawnObstacle(){
-		Vector3 newvec = new Vector3 (Random.Range (0, 2)*2, 5, 0);
+		Vector3 newvec = new Vector3 (Random.Range (0, 3)*2, 5, 0);
 		GameObject newobj = (GameObject) Instantiate (Obstacles.Dequeue(), newvec, this.transform.rotation);
 		Destroy (newobj, 5f);
 		if (Obstacles.Count <= 2)

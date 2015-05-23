@@ -28,7 +28,7 @@ public class ScoreScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         text = GetComponent<Text>();
-        particle = transform.Find("DingSwirlGlow").GetComponent<ParticleSystem>();
+        particle = transform.Find("DingSwirlGlow").GetComponent<ParticleSystem>(); //ignore the error this throws in the menu screen
         if (PlayerPrefs.HasKey(Options.HighScore)) // set scores from stored values
             highscore = PlayerPrefs.GetInt(Options.HighScore);
         else
@@ -37,6 +37,8 @@ public class ScoreScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+        if (text == null)
+            return;
         _score += Time.deltaTime;
         text.text = ((int)(_score)).ToString();
         if ((int)(_score) > highscore && !highscoreBeaten)

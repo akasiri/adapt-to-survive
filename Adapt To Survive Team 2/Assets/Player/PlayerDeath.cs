@@ -6,7 +6,7 @@ public class PlayerDeath : MonoBehaviour {
 	public GameObject player;
 	public GameObject background;
 	public GameObject gameOverDisplay;
-
+    public GameObject optionsButton;
 	// P	ublic because it is being called in Obstacle.cs
 	// Is this wise?
     public void Start()
@@ -17,6 +17,7 @@ public class PlayerDeath : MonoBehaviour {
         mix.TransitionTo(0.01f);
         GetComponent<Pause>().pause();
 		gameOverDisplay.SetActive (true);
+        optionsButton.SetActive(false);
         ScoreScript.Save();
 	}
 }
