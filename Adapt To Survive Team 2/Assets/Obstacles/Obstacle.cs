@@ -19,18 +19,26 @@ public class Obstacle : MonoBehaviour
 
 	void setObjectWeakness()
 	{
-		if (gameObject.name == "Tree(Clone)")
+		switch (gameObject.tag) {
+		case "Tree":
 			objectWeakness = 1;
-		else if (gameObject.name == "Pitfall(Clone)")
+			break;
+		case "Pitfall":
 			objectWeakness = 2;
-		else if (gameObject.name == "Water(Clone)")
+			break;
+		case "Water":
 			objectWeakness = 3;
-		else if (gameObject.name == "Boulder(Clone)")
+			break;
+		case "Boulder":
 			objectWeakness = 4;
-		else if (gameObject.name == "Fire(Clone)")
+			break;
+		case "Fire":
 			objectWeakness = 5;
-		else //if (gameObject.name == "Predator(Clone)")
+			break;
+		case "Predator":
 			objectWeakness = 6;
+			break;
+		}
 	}
 
 	/*
@@ -46,12 +54,7 @@ public class Obstacle : MonoBehaviour
         Debug.Log("Hit!");
 		if (coll.gameObject.tag == "Player") 
 		{
-			if (coll.gameObject.GetComponent<PlayerState>().animals == objectWeakness) 
-			{
-				// obstacle die
-                OnDestroy();
-			}
-			else 
+			if (coll.gameObject.GetComponent<PlayerState>().animals != objectWeakness) 
 			{
 				// player die
 				coll.gameObject.GetComponent<PlayerDeath>().Die();

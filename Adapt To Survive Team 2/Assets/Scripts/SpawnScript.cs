@@ -22,7 +22,7 @@ public class SpawnScript : MonoBehaviour {
 		int index;
 		for (int i = 0; i < 10; i++) 
 		{
-			index = Random.Range(0,(Objects.Count-1));
+			index = Random.Range(0,Objects.Count);
 			Obstacles.Enqueue(Objects[index]);
 		}
 	}
