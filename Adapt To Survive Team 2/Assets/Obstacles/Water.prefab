@@ -12,6 +12,7 @@ GameObject:
   - 95: {fileID: 9548564}
   - 50: {fileID: 5042828}
   - 114: {fileID: 11454524}
+  - 61: {fileID: 6167540}
   m_Layer: 0
   m_Name: Water
   m_TagString: Water
@@ -46,6 +47,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &6167540
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 130150}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2.55999994, y: 2.55999994}
 --- !u!95 &9548564
 Animator:
   serializedVersion: 3
@@ -71,7 +85,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 130150}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 298ab6831874992428ab3eb82a0fdf63, type: 3}
+  m_Script: {fileID: 11500000, guid: e6bb03939315dba47977efe13db96c21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objectWeakness: 1
@@ -98,7 +112,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 788ba8807e4563d47b1ed1d67f683473, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
