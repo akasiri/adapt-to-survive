@@ -61,12 +61,12 @@ public class Obstacle : MonoBehaviour
             }
             else
             {
-                OnDestroy(coll);
+                OnDestroy();
             }
 		}
 	}
 
-    protected virtual void OnDestroy(Collider2D coll)
+    protected virtual void OnDestroy()
     {
         Destroy(this.gameObject);
     }
