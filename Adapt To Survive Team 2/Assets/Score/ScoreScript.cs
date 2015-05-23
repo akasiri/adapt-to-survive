@@ -58,10 +58,11 @@ public class ScoreScript : MonoBehaviour {
         defaultmix.TransitionTo(0.25f);
     }
 
-    public void Save()
+    public static void Save()
     {
         if (highscoreBeaten)
             PlayerPrefs.SetInt(Options.HighScore, (int)_score);
+        _score = 0;
     }
 
     public void Reset()

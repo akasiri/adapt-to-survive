@@ -17,5 +17,6 @@ public class PlayerDeath : MonoBehaviour {
         mix.TransitionTo(0.01f);
         GetComponent<Pause>().pause();
 		gameOverDisplay.SetActive (true);
+        ScoreScript.Save();
 	}
 }
