@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &131542
 GameObject:
   m_ObjectHideFlags: 1
@@ -98,6 +98,7 @@ GameObject:
   - 114: {fileID: 11459474}
   - 114: {fileID: 11472114}
   - 114: {fileID: 11485732}
+  - 114: {fileID: 11421622}
   m_Layer: 5
   m_Name: Restart
   m_TagString: Untagged
@@ -133,6 +134,17 @@ MonoBehaviour:
   m_Text: 'Game Over
 
 '
+--- !u!114 &11421622
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 178394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 526a4dc96ae107f4c96d496e4477acdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11430420
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -353,7 +365,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecc68a8946205754895243162baccd1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: DerekCopy
 --- !u!222 &22207804
 CanvasRenderer:
   m_ObjectHideFlags: 1

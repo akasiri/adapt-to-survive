@@ -11,7 +11,7 @@ public class PlayerDeath : MonoBehaviour {
 	// Is this wise?
 	public void Die () {
 		player.SetActive (false);
-		background.GetComponent<BackgroundScript> ().speed = 0;
+        GetComponent<Pause>().pause();
 		gameOverDisplay.SetActive (true);
 	}
 }
