@@ -110,7 +110,7 @@ public class ScoreScript : MonoBehaviour {
                 _score += 1;
                 thi.extra.text = "";
             }
-            Pause.Freeze(0.03f);
+            Pause.Freeze(0.05f);
             yield return new WaitForSeconds(countDelay);
 
         }
