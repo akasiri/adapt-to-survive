@@ -3,18 +3,18 @@ using System.Collections;
 
 public class Obstacle : MonoBehaviour 
 {
-	public float speed = -3f;
+	public float speed = 3f;
 	public int objectWeakness = 1;
 
     void Start()
     {
         //temp code
-        GetComponent<Rigidbody2D>().velocity = new Vector3(0, speed, 0);
+        GetComponent<Rigidbody2D>().velocity = new Vector3(0, -speed, 0);
     }
 
 	void Update()
 	{
-		GetComponent<Rigidbody2D>().velocity = new Vector3(0, speed, 0);
+		GetComponent<Rigidbody2D>().velocity = new Vector3(0, -speed, 0);
 		setObjectWeakness();
 	}
 
