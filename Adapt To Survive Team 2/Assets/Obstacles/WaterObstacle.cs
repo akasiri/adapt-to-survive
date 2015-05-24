@@ -21,6 +21,7 @@ public class WaterObstacle : Obstacle {
 
     void OnTriggerExit2D(Collider2D other)
     {
+        played = true;
         Destroy(this.gameObject);
     }
 
