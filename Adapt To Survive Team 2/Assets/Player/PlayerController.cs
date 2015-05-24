@@ -10,11 +10,14 @@ public class PlayerController : MonoBehaviour
     public float laneDistance = 2f;
     private ParticleSystem jumpDust;
     private Controls control;
+
+    private AudioSource audio;
     // Use this for initialization
     void Start()
     {
         control = GetComponent<Controls>();
         jumpDust = transform.Find("JumpDustParticleSystem").GetComponent<ParticleSystem>();
+        audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -24,6 +27,7 @@ public class PlayerController : MonoBehaviour
         if (control.ConsumeCommandStart(Controls.Command.LEFT) && lane > 0)
         {
             //Debug.Log("Jump!");
+            audio.Play();
             lane--;
             StartCoroutine(UpdateLane());
             jumpDust.transform.eulerAngles = new Vector3(jumpDust.transform.eulerAngles.x, 90, jumpDust.transform.eulerAngles.z); //turn
@@ -33,6 +37,7 @@ public class PlayerController : MonoBehaviour
         else if (control.ConsumeCommandStart(Controls.Command.RIGHT) && lane < numLanes - 1)
         {
             //Debug.Log("Jump!");
+            audio.Play();
             lane++;
             StartCoroutine(UpdateLane());
             jumpDust.transform.eulerAngles = new Vector3(jumpDust.transform.eulerAngles.x, 270, jumpDust.transform.eulerAngles.z); //turn
