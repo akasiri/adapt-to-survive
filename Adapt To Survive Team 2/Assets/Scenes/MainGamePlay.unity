@@ -638,10 +638,6 @@ Prefab:
       propertyPath: optionsButton
       value: 
       objectReference: {fileID: 1626096922}
-    - target: {fileID: 8265372, guid: 3c7cbbdf55e07034e93ceca0ed832ad9, type: 2}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3c7cbbdf55e07034e93ceca0ed832ad9, type: 2}
   m_IsPrefabParent: 0

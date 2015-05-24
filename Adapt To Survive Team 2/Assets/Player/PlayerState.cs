@@ -5,7 +5,7 @@ public class PlayerState : MonoBehaviour {
 
 	public int animals = 1;
     private Animator theStateMachine;
-
+    public GameObject tip;
 	private float dolphinTimer;
 
     void Start()
@@ -66,8 +66,11 @@ public class PlayerState : MonoBehaviour {
 			dolphinTimer -= Time.deltaTime;
 		}
 
-		if (dolphinTimer < 0)
-			this.gameObject.GetComponent<PlayerDeath>().Die();
+        if (dolphinTimer < 0)
+        {
+            this.gameObject.GetComponent<PlayerDeath>().Die(tip);
+            dolphinTimer = 0;
+        }
 	}
 
 	void OnTriggerEnter2D(Collider2D col)

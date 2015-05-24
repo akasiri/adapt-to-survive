@@ -179,7 +179,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: aaeb33d29da5ab64398fafb0b2b8aedf, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -302,6 +302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animals: 1
+  tip: {fileID: 126206, guid: 4b4eb899e1d9f494196e760fc01ebf6e, type: 2}
 --- !u!114 &11473628
 MonoBehaviour:
   m_ObjectHideFlags: 1
