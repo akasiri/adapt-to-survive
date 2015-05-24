@@ -26,6 +26,8 @@ public static class Snapshots
 public static class Scenes
 {
     public const string Menu = "Menu";
+    public const string Tutorial = "Tutorial";
+    public const string Game = "MainGamePlay";
 }
 
 public class Parameters
