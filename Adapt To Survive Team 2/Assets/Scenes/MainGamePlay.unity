@@ -321,19 +321,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22456274, guid: 98079acc9015990489868c1461fc0943, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 22456274, guid: 98079acc9015990489868c1461fc0943, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -20
+      value: -40
       objectReference: {fileID: 0}
     - target: {fileID: 22456274, guid: 98079acc9015990489868c1461fc0943, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 60
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 22456274, guid: 98079acc9015990489868c1461fc0943, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 40
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 22456274, guid: 98079acc9015990489868c1461fc0943, type: 2}
       propertyPath: m_AnchorMin.x
@@ -358,10 +358,6 @@ Prefab:
     - target: {fileID: 22456274, guid: 98079acc9015990489868c1461fc0943, type: 2}
       propertyPath: m_Pivot.y
       value: .5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8294264, guid: 98079acc9015990489868c1461fc0943, type: 2}
-      propertyPath: m_PlayOnAwake
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 98079acc9015990489868c1461fc0943, type: 2}

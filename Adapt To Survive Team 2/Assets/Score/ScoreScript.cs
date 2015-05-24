@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine.Audio;
 public class ScoreScript : MonoBehaviour {
+    public GameObject[] comboIcons; //organized by animal number
+
     public AudioMixerSnapshot mix;
     public AudioMixerSnapshot defaultmix;
 
@@ -11,12 +14,18 @@ public class ScoreScript : MonoBehaviour {
     private AudioSource aud;
     private Text text;
     private Text extra;
+    private GameObject comboGroup;
     private static int extraPoints = 0;
     private static float _score = 0;
     private static float highscore;
     private static bool highscoreBeaten = false;
+    private static bool comboCompleteFlag = false;
     private ParticleSystem particle;
     private static ScoreScript thi;
+
+    private static string combo = "";
+    private static int comboCount = 0;
+
     public static int Score
     {
         get { return (int)_score; }
@@ -36,6 +45,7 @@ public class ScoreScript : MonoBehaviour {
         aud = GetComponent<AudioSource>();
         extra = transform.Find("BonusScore").GetComponent<Text>();
         text = GetComponent<Text>();
+        comboGroup = transform.parent.transform.Find("ComboGroup").gameObject;
         particle = transform.Find("DingSwirlGlow").GetComponent<ParticleSystem>(); //ignore the error this throws in the menu screen
         if (PlayerPrefs.HasKey(Options.HighScore)) // set scores from stored values
             highscore = PlayerPrefs.GetInt(Options.HighScore);
@@ -75,6 +85,8 @@ public class ScoreScript : MonoBehaviour {
             PlayerPrefs.SetInt(Options.HighScore, (int)_score);
         _score = 0;
         highscoreBeaten = false;
+        combo = "";
+        comboCount = 0;
     }
 
     public static void Reset()
@@ -85,10 +97,70 @@ public class ScoreScript : MonoBehaviour {
 
     }
 
-	public static void AddPoints(int points){
+	public static void AddPoints(int points, string type){
 		extraPoints += points;
         thi.StartCoroutine(ExtraPoints());
+        if (comboCompleteFlag)
+            return;
+        if (type == combo && comboCount != 0)
+        {
+            comboCount++;
+            if (comboCount == 3)
+            {
+                thi.StartCoroutine(ComboComplete());
+            }
+        }
+        else if (comboCount == 0) //new combo!
+        {
+            combo = type;
+            comboCount++;
+        }
+        else //dead combo
+        {
+            //give points
+            Debug.Log("dead combo");
+            combo = "";
+            comboCount = 0;
+        }
+        UpdateComboUI();
 	}
+
+    public static void UpdateComboUI()
+    {
+        // clear previous graphics
+        foreach (Transform child in thi.comboGroup.transform)
+            Destroy(child.gameObject);
+        for (int i = 0; i < comboCount; i++)
+        {
+            GameObject nextGraphic = Instantiate(thi.comboIcons[Tags.obstacleToInt[combo] - 1]) as GameObject;
+            nextGraphic.transform.parent = thi.comboGroup.transform;
+            nextGraphic.transform.localPosition = new Vector3(30 * i - 30, 0, 0);
+        }
+    }
+
+    private static IEnumerator ComboComplete()
+    {
+        comboCompleteFlag = true;
+        for (int i = 0; i < 3; i++) //blink 3 times
+        {
+            Debug.Log("Blinkoff");
+            foreach (Transform child in thi.comboGroup.transform)
+            {
+                child.gameObject.GetComponent<Image>().enabled = false;
+            }
+            yield return new WaitForSeconds(countDelay);
+            Debug.Log("Blinkon");
+            foreach (Transform child in thi.comboGroup.transform)
+            {
+                child.gameObject.GetComponent<Image>().enabled = true;
+            }
+            yield return new WaitForSeconds(countDelay);
+        }
+        Debug.Log("Combo Complete!");
+        comboCompleteFlag = false;
+        AddPoints(15, ""); //resets combo, also adds points
+        
+    }
 
     private static IEnumerator ExtraPoints()
     {

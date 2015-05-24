@@ -90,7 +90,7 @@ public class Obstacle : MonoBehaviour
             }
             else
             {
-                ScoreScript.AddPoints(5);
+                ScoreScript.AddPoints(5, this.tag);
                 OnDestroy();
                 
             }
