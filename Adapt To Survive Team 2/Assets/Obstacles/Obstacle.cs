@@ -68,6 +68,5 @@ public class Obstacle : MonoBehaviour
 
     protected virtual void OnDestroy()
     {
-        Destroy(this.gameObject);
     }
 }
