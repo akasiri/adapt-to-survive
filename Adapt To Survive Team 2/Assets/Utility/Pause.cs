@@ -9,6 +9,7 @@ public class Pause : MonoBehaviour {
     private static float? currentTimeScale;
     private static bool paused = false;
     private static bool frozen = false;
+<<<<<<< HEAD
     
 	public void pause(bool toPause = true) //wrapper
     {
@@ -16,6 +17,19 @@ public class Pause : MonoBehaviour {
     }
 
 	public void staticPause(bool toPause = true)
+=======
+
+    public static bool isPaused()
+    {
+        return paused;
+    }
+
+    public void pause(bool toPause = true) //wrapper
+    {
+        staticPause(toPause);
+    }
+	public static void staticPause(bool toPause = true)
+>>>>>>> 15a8c38ab35f0c9d887fc870f2e8fae9753a9428
     {
         Debug.Log("Pause");
         if (toPause && !paused)

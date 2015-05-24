@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 8bdc54c511e069a4685cdf0c4be19029
-timeCreated: 1432429755
+timeCreated: 1432495650
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -95,6 +95,11 @@ TextureImporter:
     21300176: Monster Sprite_88
     21300178: Monster Sprite_89
     21300180: Monster Sprite_90
+    21300182: Monster Sprite_91
+    21300184: Monster Sprite_92
+    21300186: Monster Sprite_93
+    21300188: Monster Sprite_94
+    21300190: Monster Sprite_95
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -143,910 +148,960 @@ TextureImporter:
     - name: Monster Sprite_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 0
         y: 224
-        width: 23
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_1
       rect:
         serializedVersion: 2
-        x: 35
-        y: 128
-        width: 24
-        height: 128
+        x: 32
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_2
       rect:
         serializedVersion: 2
-        x: 68
+        x: 64
         y: 224
-        width: 23
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_3
       rect:
         serializedVersion: 2
-        x: 100
+        x: 96
         y: 224
-        width: 25
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_4
       rect:
         serializedVersion: 2
-        x: 130
-        y: 128
-        width: 28
-        height: 128
+        x: 128
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_5
       rect:
         serializedVersion: 2
-        x: 164
+        x: 160
         y: 224
-        width: 25
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_6
       rect:
         serializedVersion: 2
-        x: 196
+        x: 192
         y: 224
-        width: 25
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_7
       rect:
         serializedVersion: 2
-        x: 227
-        y: 0
-        width: 27
-        height: 256
+        x: 224
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_8
       rect:
         serializedVersion: 2
-        x: 260
+        x: 256
         y: 224
-        width: 25
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_9
       rect:
         serializedVersion: 2
-        x: 292
+        x: 288
         y: 224
-        width: 24
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_10
       rect:
         serializedVersion: 2
-        x: 323
-        y: 128
-        width: 27
-        height: 128
+        x: 320
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_11
       rect:
         serializedVersion: 2
-        x: 357
+        x: 352
         y: 224
-        width: 24
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_12
       rect:
         serializedVersion: 2
-        x: 3
+        x: 0
         y: 192
-        width: 23
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_13
       rect:
         serializedVersion: 2
-        x: 67
+        x: 32
         y: 192
-        width: 23
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_14
       rect:
         serializedVersion: 2
-        x: 98
+        x: 64
         y: 192
-        width: 27
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_15
       rect:
         serializedVersion: 2
-        x: 162
+        x: 96
         y: 192
-        width: 26
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_16
       rect:
         serializedVersion: 2
-        x: 197
+        x: 128
         y: 192
-        width: 22
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_17
       rect:
         serializedVersion: 2
-        x: 261
+        x: 160
         y: 192
-        width: 22
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_18
       rect:
         serializedVersion: 2
-        x: 294
+        x: 192
         y: 192
-        width: 19
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_19
       rect:
         serializedVersion: 2
-        x: 358
+        x: 224
         y: 192
-        width: 19
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_20
       rect:
         serializedVersion: 2
-        x: 4
-        y: 160
-        width: 23
-        height: 31
+        x: 256
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_21
       rect:
         serializedVersion: 2
-        x: 68
-        y: 160
-        width: 23
-        height: 31
+        x: 288
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_22
       rect:
         serializedVersion: 2
-        x: 99
-        y: 160
-        width: 27
-        height: 31
+        x: 320
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_23
       rect:
         serializedVersion: 2
-        x: 164
-        y: 160
-        width: 26
-        height: 31
+        x: 352
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_24
       rect:
         serializedVersion: 2
-        x: 197
+        x: 0
         y: 160
-        width: 22
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_25
       rect:
         serializedVersion: 2
-        x: 261
+        x: 32
         y: 160
-        width: 22
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_26
       rect:
         serializedVersion: 2
-        x: 295
+        x: 64
         y: 160
-        width: 19
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_27
       rect:
         serializedVersion: 2
-        x: 359
+        x: 96
         y: 160
-        width: 19
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_28
       rect:
         serializedVersion: 2
-        x: 4
-        y: 128
-        width: 23
-        height: 31
+        x: 128
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_29
       rect:
         serializedVersion: 2
-        x: 68
-        y: 128
-        width: 23
-        height: 31
+        x: 160
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_30
       rect:
         serializedVersion: 2
-        x: 100
-        y: 128
-        width: 25
-        height: 31
+        x: 192
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_31
       rect:
         serializedVersion: 2
-        x: 164
-        y: 128
-        width: 25
-        height: 31
+        x: 224
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_32
       rect:
         serializedVersion: 2
-        x: 197
-        y: 128
-        width: 23
-        height: 31
+        x: 256
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_33
       rect:
         serializedVersion: 2
-        x: 261
-        y: 128
-        width: 23
-        height: 31
+        x: 288
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_34
       rect:
         serializedVersion: 2
-        x: 294
-        y: 128
-        width: 21
-        height: 31
+        x: 320
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_35
       rect:
         serializedVersion: 2
-        x: 358
-        y: 128
-        width: 21
-        height: 31
+        x: 352
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_36
       rect:
         serializedVersion: 2
-        x: 7
-        y: 96
-        width: 22
-        height: 30
+        x: 0
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_37
       rect:
         serializedVersion: 2
-        x: 39
-        y: 96
-        width: 18
-        height: 30
+        x: 32
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_38
       rect:
         serializedVersion: 2
-        x: 69
-        y: 96
-        width: 20
-        height: 30
+        x: 64
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_39
       rect:
         serializedVersion: 2
-        x: 106
-        y: 97
-        width: 14
-        height: 16
+        x: 96
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_40
       rect:
         serializedVersion: 2
-        x: 138
-        y: 97
-        width: 14
-        height: 17
+        x: 128
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_41
       rect:
         serializedVersion: 2
-        x: 170
-        y: 97
-        width: 14
-        height: 16
+        x: 160
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_42
       rect:
         serializedVersion: 2
-        x: 197
-        y: 96
-        width: 22
-        height: 31
+        x: 192
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_43
       rect:
         serializedVersion: 2
-        x: 262
-        y: 96
-        width: 22
-        height: 31
+        x: 224
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_44
       rect:
         serializedVersion: 2
-        x: 293
-        y: 93
-        width: 17
-        height: 11
+        x: 256
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_45
       rect:
         serializedVersion: 2
-        x: 311
-        y: 93
-        width: 7
-        height: 11
+        x: 288
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_46
       rect:
         serializedVersion: 2
-        x: 327
-        y: 93
-        width: 9
-        height: 11
+        x: 320
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_47
       rect:
         serializedVersion: 2
-        x: 337
-        y: 89
-        width: 7
-        height: 12
+        x: 352
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_48
       rect:
         serializedVersion: 2
-        x: 345
-        y: 93
-        width: 6
-        height: 8
+        x: 0
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_49
       rect:
         serializedVersion: 2
-        x: 353
-        y: 93
-        width: 9
-        height: 11
+        x: 32
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_50
       rect:
         serializedVersion: 2
-        x: 363
-        y: 93
-        width: 7
-        height: 8
+        x: 64
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_51
       rect:
         serializedVersion: 2
-        x: 371
-        y: 93
-        width: 6
-        height: 8
+        x: 96
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_52
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
-        width: 96
-        height: 21
+        x: 128
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_53
       rect:
         serializedVersion: 2
-        x: 101
-        y: 64
-        width: 19
-        height: 15
+        x: 160
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_54
       rect:
         serializedVersion: 2
-        x: 134
-        y: 64
-        width: 18
-        height: 16
+        x: 192
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_55
       rect:
         serializedVersion: 2
-        x: 165
-        y: 64
-        width: 19
-        height: 15
+        x: 224
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_56
       rect:
         serializedVersion: 2
-        x: 197
-        y: 64
-        width: 19
-        height: 31
+        x: 256
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_57
       rect:
         serializedVersion: 2
-        x: 262
-        y: 64
-        width: 19
-        height: 31
+        x: 288
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_58
       rect:
         serializedVersion: 2
-        x: 324
-        y: 75
-        width: 6
-        height: 10
+        x: 320
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_59
       rect:
         serializedVersion: 2
-        x: 331
-        y: 71
-        width: 11
-        height: 11
+        x: 352
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_60
       rect:
         serializedVersion: 2
-        x: 199
-        y: 32
-        width: 19
-        height: 31
+        x: 0
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_61
       rect:
         serializedVersion: 2
-        x: 263
-        y: 32
-        width: 19
-        height: 31
+        x: 32
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_62
       rect:
         serializedVersion: 2
-        x: 292
-        y: 51
-        width: 8
-        height: 10
+        x: 64
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_63
       rect:
         serializedVersion: 2
-        x: 302
-        y: 51
-        width: 6
-        height: 10
+        x: 96
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_64
       rect:
         serializedVersion: 2
-        x: 309
-        y: 51
-        width: 6
-        height: 7
+        x: 128
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_65
       rect:
         serializedVersion: 2
-        x: 316
-        y: 51
-        width: 7
-        height: 10
+        x: 160
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_66
       rect:
         serializedVersion: 2
-        x: 324
-        y: 51
-        width: 6
-        height: 7
+        x: 192
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_67
       rect:
         serializedVersion: 2
-        x: 331
-        y: 51
-        width: 8
-        height: 7
+        x: 224
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_68
       rect:
         serializedVersion: 2
-        x: 341
-        y: 51
-        width: 12
-        height: 10
+        x: 256
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_69
       rect:
         serializedVersion: 2
-        x: 354
-        y: 47
-        width: 6
-        height: 11
+        x: 288
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_70
       rect:
         serializedVersion: 2
-        x: 361
-        y: 47
-        width: 6
-        height: 11
+        x: 320
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_71
       rect:
         serializedVersion: 2
-        x: 368
-        y: 47
-        width: 7
-        height: 11
+        x: 352
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_72
       rect:
         serializedVersion: 2
-        x: 105
+        x: 0
         y: 32
-        width: 20
-        height: 15
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_73
       rect:
         serializedVersion: 2
-        x: 138
+        x: 32
         y: 32
-        width: 18
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_74
       rect:
         serializedVersion: 2
-        x: 170
+        x: 64
         y: 32
-        width: 19
-        height: 15
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_75
       rect:
         serializedVersion: 2
-        x: 316
+        x: 96
         y: 32
-        width: 6
-        height: 8
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_76
       rect:
         serializedVersion: 2
-        x: 325
+        x: 128
         y: 32
-        width: 11
-        height: 11
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_77
       rect:
         serializedVersion: 2
-        x: 340
+        x: 160
         y: 32
-        width: 7
-        height: 11
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_78
       rect:
         serializedVersion: 2
-        x: 73
-        y: 0
-        width: 16
-        height: 31
+        x: 192
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_79
       rect:
         serializedVersion: 2
-        x: 106
-        y: 0
-        width: 14
-        height: 18
+        x: 224
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_80
       rect:
         serializedVersion: 2
-        x: 138
-        y: 0
-        width: 14
-        height: 18
+        x: 256
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_81
       rect:
         serializedVersion: 2
-        x: 170
-        y: 0
-        width: 14
-        height: 18
+        x: 288
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_82
       rect:
         serializedVersion: 2
-        x: 198
-        y: 0
-        width: 20
-        height: 31
+        x: 320
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_83
       rect:
         serializedVersion: 2
-        x: 263
-        y: 0
-        width: 20
-        height: 31
+        x: 352
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_84
       rect:
         serializedVersion: 2
-        x: 297
-        y: 4
-        width: 11
-        height: 5
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_85
       rect:
         serializedVersion: 2
-        x: 309
-        y: 4
-        width: 11
-        height: 5
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_86
       rect:
         serializedVersion: 2
-        x: 321
-        y: 2
-        width: 11
-        height: 6
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_87
       rect:
         serializedVersion: 2
-        x: 333
-        y: 2
-        width: 6
-        height: 6
+        x: 96
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_88
       rect:
         serializedVersion: 2
-        x: 340
-        y: 4
-        width: 16
-        height: 6
+        x: 128
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_89
       rect:
         serializedVersion: 2
-        x: 357
-        y: 4
-        width: 10
-        height: 5
+        x: 160
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Monster Sprite_90
       rect:
         serializedVersion: 2
-        x: 368
-        y: 4
-        width: 6
-        height: 5
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Monster Sprite_91
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Monster Sprite_92
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Monster Sprite_93
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Monster Sprite_94
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Monster Sprite_95
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -11,6 +11,7 @@ public class ScoreScript : MonoBehaviour {
 
     private static float countDelay = 0.25f;
 
+    private AudioSource comboAud;
     private AudioSource aud;
     private Text text;
     private Text extra;
@@ -44,6 +45,7 @@ public class ScoreScript : MonoBehaviour {
 	void Start () {
         aud = GetComponent<AudioSource>();
         extra = transform.Find("BonusScore").GetComponent<Text>();
+        comboAud = transform.Find("BonusScore").GetComponent<AudioSource>();
         text = GetComponent<Text>();
         comboGroup = transform.parent.transform.Find("ComboGroup").gameObject;
         particle = transform.Find("DingSwirlGlow").GetComponent<ParticleSystem>(); //ignore the error this throws in the menu screen
@@ -150,6 +152,7 @@ public class ScoreScript : MonoBehaviour {
             }
             yield return new WaitForSeconds(countDelay);
             Debug.Log("Blinkon");
+            thi.comboAud.Play();
             foreach (Transform child in thi.comboGroup.transform)
             {
                 child.gameObject.GetComponent<Image>().enabled = true;

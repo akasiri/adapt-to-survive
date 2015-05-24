@@ -22,7 +22,7 @@ public class SpawnScript : MonoBehaviour {
 	void newQueue()
 	{
 		int index;
-		for (int i = 0; i < 10; i++) 
+		for (int i = 0; i < 15; i++) 
 		{
 			index = Random.Range(0,Objects.Count);
 			Obstacles.Enqueue(Objects[index]);
@@ -36,52 +36,45 @@ public class SpawnScript : MonoBehaviour {
 		if(CurrentTime >= DifficultyIncreaseInterval){
 			CurrentTime = 0;
 			DifficultyLevel += 1;
-			SpawnRate *= 0.8f;
-
-			if(SpawnRate < 1)
-					SpawnRate= 1f;
+            
+            SpawnRate = SpawnRate *= 0.8f < 1 ? 1 : SpawnRate *= 0.8f;
 
 			CancelInvoke("SpawnObstacle");
 
-			if(DifficultyLevel >=2)
-				InvokeRepeating ("SpawnObstacle2",0f, SpawnRate);
-			else
-				InvokeRepeating ("SpawnObstacle",0f, SpawnRate);
+			InvokeRepeating ("SpawnObstacle",0f, SpawnRate);
 		}
 	}
 
 	void DestroyObstacle(){
 		SpawnedObjects.Remove (SpawnedObjects[0]);
-		Destroy (SpawnedObjects[0]);
+		Destroy(SpawnedObjects[0],0f);
 	}	
 
 	void SpawnObstacle(){
-		Vector3 newvec = new Vector3 (Random.Range (0, 3)*2, 5, 0);
-		GameObject newobj = (GameObject) Instantiate (Obstacles.Dequeue(), newvec, this.transform.rotation);
-		//float obj_speed = GameObject.Find("Player").GetComponent<PlayerState>().currentSpeed;
-		//newobj.GetComponent<Obstacle> ().speed = obj_speed;
-		SpawnedObjects.Add (newobj);
-		Invoke ("DestroyObstacle", 10f); //to account for slower animals (i.e. bear)
-		if (Obstacles.Count <= 2)
-			newQueue ();
-	}
-
-	void SpawnObstacle2(){
-		int Objects = 0;
+        int Objects = 0;
+        int ObjectLimit = DifficultyLevel >= 2 ? 2 : 1;
 		List<int> LastPosition = new List<int>();
-		while (Objects<2) {
-			int LanePos = Random.Range (0, 3) * 2;
-			if(!LastPosition.Contains(LanePos)){
-			Vector3 newvec = new Vector3 (LanePos, 5, 0);
-			GameObject newobj = (GameObject)Instantiate (Obstacles.Dequeue (), newvec, this.transform.rotation);
-			SpawnedObjects.Add (newobj);
-			Invoke ("DestroyObstacle", 5f);
-			
-			if (Obstacles.Count < 3)
-				newQueue ();
+        while (Objects < ObjectLimit)
+        {
+            GameObject CurrentObstacle = Obstacles.Dequeue();
+            int LanePos = Random.Range(0, 3);
+            
+			if (CurrentObstacle.tag == Tags.Tree)
+                LanePos = Random.value < 0.5f ? 0 : 2;
 
-			Objects+=1;
-			LastPosition.Add(LanePos);
+            LanePos *= 2;
+
+			if(!LastPosition.Contains(LanePos)){
+			    Vector3 newvec = new Vector3 (LanePos, 5, 0);
+				GameObject newobj = (GameObject) Instantiate(CurrentObstacle, newvec, this.transform.rotation);
+			    SpawnedObjects.Add (newobj);
+			    Invoke ("DestroyObstacle", 10f);
+			
+			    if (Obstacles.Count <= 2)
+				    newQueue ();
+
+			    Objects+=1;
+			    LastPosition.Add(LanePos);
 			}
 		}
 	}
