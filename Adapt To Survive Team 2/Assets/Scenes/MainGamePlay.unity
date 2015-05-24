@@ -676,6 +676,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 19801158, guid: 4c8fc0c84ba314742b6c49ee908d7ccb, type: 2}
+      propertyPath: InitialModule.startColor.maxColor.rgba
+      value: 2440077535
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4c8fc0c84ba314742b6c49ee908d7ccb, type: 2}
   m_IsPrefabParent: 0
