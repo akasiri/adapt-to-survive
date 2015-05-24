@@ -14,36 +14,6 @@ public class Obstacle : MonoBehaviour
         setObjectWeakness();
     }
 
-	void Update()
-	{
-		changeSpeed();
-	}
-
-	public void changeSpeed()
-	{
-		switch (GameObject.Find("Player").GetComponent<PlayerState>().animals) 
-		{
-			case 1:
-				speed = 4f;
-				break;
-			case 2:
-				speed = 2.5f;
-				break;
-			case 3:
-				speed = 3f;
-				break;
-			case 4:
-				speed = 2f;
-				break;
-			case 5:
-				speed = 1.5f;
-				break;
-			case 6:
-				speed = 3f;
-				break;
-		}
-	}
-
 	protected void setObjectWeakness()
 	{
 		switch (gameObject.tag) 

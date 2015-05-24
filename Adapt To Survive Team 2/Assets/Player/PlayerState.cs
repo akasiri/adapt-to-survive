@@ -23,6 +23,7 @@ public class PlayerState : MonoBehaviour {
 			dolphinTimer = 0f;
 			Debug.Log ("Monkey");
             theStateMachine.SetInteger(Parameters.State, 1);
+            updateSpeed(4);
 		}
 		else if (Input.GetKeyDown ("2") && animals != 2)
 		{
@@ -30,6 +31,7 @@ public class PlayerState : MonoBehaviour {
 			dolphinTimer = 0f;
 			Debug.Log ("Hawk");
             theStateMachine.SetInteger(Parameters.State, 2);
+            updateSpeed(3.5f);
 		}
 		else if (Input.GetKeyDown ("3") && animals != 3)
 		{
@@ -39,6 +41,7 @@ public class PlayerState : MonoBehaviour {
 
 			Debug.Log ("Dolphin");
             theStateMachine.SetInteger(Parameters.State, 3);
+            updateSpeed(3f);
 		}
 		else if (Input.GetKeyDown ("4") && animals != 4)
 		{
@@ -46,6 +49,7 @@ public class PlayerState : MonoBehaviour {
 			dolphinTimer = 0f;
 			Debug.Log ("Bear");
             theStateMachine.SetInteger(Parameters.State, 4);
+            updateSpeed(4);
 		}
 		else if (Input.GetKeyDown ("5") && animals != 5)
 		{
@@ -53,6 +57,8 @@ public class PlayerState : MonoBehaviour {
 			dolphinTimer = 0f;;
 			Debug.Log ("Mole");
             theStateMachine.SetInteger(Parameters.State, 5);
+            updateSpeed(3.5f);
+
 		}
 		else if (Input.GetKeyDown ("6") && animals != 6)
 		{
@@ -60,6 +66,7 @@ public class PlayerState : MonoBehaviour {
 			dolphinTimer = 0f;
 			Debug.Log ("Porcupine");
             theStateMachine.SetInteger(Parameters.State, 6);
+            updateSpeed(4);
 		}
 
 		if (dolphinTimer > 0) {
@@ -72,6 +79,18 @@ public class PlayerState : MonoBehaviour {
             dolphinTimer = 0;
         }
 	}
+
+    void updateSpeed(float speed)
+    {
+        Obstacle.speed = speed;
+        foreach (string tag in Tags.Obstacles)
+        {
+            foreach (GameObject obstacles in GameObject.FindGameObjectsWithTag(tag))
+            {
+                obstacles.GetComponent<Rigidbody2D>().velocity = new Vector3(0, -speed, 0);
+            }
+        }
+    }
 
 	void OnTriggerEnter2D(Collider2D col)
 	{
