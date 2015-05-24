@@ -188,7 +188,6 @@ public class ScoreScript : MonoBehaviour {
                     extraPoints = 0;
                     thi.extra.text = "";
                 }
-                Pause.Freeze(0.05f);
                 yield return new WaitForSeconds(countDelay);
             }
 

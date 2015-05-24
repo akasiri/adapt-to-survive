@@ -19,7 +19,7 @@ public class PredatorJumpScript : MonoBehaviour {
         Vector3 newSpeed = rigid.velocity * 3;
         rigid.velocity = Vector3.zero;
         yield return new WaitForSeconds(0.25f);
-        Pause.Freeze(0.2f, 0.4f);
+        StartCoroutine(Pause.Freeze(0.2f, 0.4f));
         rigid.velocity = newSpeed;
     }
 

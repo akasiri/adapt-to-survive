@@ -2,7 +2,6 @@
 using System.Collections;
 
 public class BoulderScript : Obstacle {
-
 	// Use this for initialization
     void Start()
     {
@@ -13,5 +12,9 @@ public class BoulderScript : Obstacle {
     protected override void OnDestroy()
     {
         GetComponent<AudioSource>().Play();
+        transform.Find("BoulderCrush").GetComponent<ParticleSystem>().Play();
+        GetComponent<SpriteRenderer>().enabled = false;
+        StartCoroutine(ScreenShake.RandomShake(0.5f, 0.25f));
+        StartCoroutine(Pause.Freeze(0.1f));
     }
 }
