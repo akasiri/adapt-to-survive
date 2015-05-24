@@ -68,7 +68,7 @@ public class ScoreScript : MonoBehaviour {
         highscoreBeaten = false;
     }
 
-    public void Reset()
+    public static void Reset()
     {
         PlayerPrefs.SetInt(Options.HighScore, 10);
         _score = 0;
@@ -76,7 +76,7 @@ public class ScoreScript : MonoBehaviour {
 
     }
 
-	public void AddPoints(int points){
+	public static void AddPoints(int points){
 		_score += points;
 	}
 }

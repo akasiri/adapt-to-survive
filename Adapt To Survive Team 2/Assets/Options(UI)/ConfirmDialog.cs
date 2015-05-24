@@ -19,7 +19,7 @@ public class ConfirmDialog : MonoBehaviour {
         }
         else
         {
-            GetComponent<ScoreScript>().Reset();
+            ScoreScript.Reset();
             clicked = false;
             text.text = "Reset High Score";
         }

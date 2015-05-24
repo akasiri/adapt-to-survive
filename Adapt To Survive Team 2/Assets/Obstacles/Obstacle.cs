@@ -3,14 +3,11 @@ using System.Collections;
 using UnityEngine.UI;
 public class Obstacle : MonoBehaviour 
 {
-
-	GameObject Panel;
 	public static float speed = 3f;
 	public int objectWeakness = 1;
 
     void Start()
     {
-		Panel = GameObject.Find ("Score");
         //temp code
 		GetComponent<Rigidbody2D>().velocity = new Vector3(0, -speed, 0);
     }
@@ -92,7 +89,7 @@ public class Obstacle : MonoBehaviour
             }
             else
             {
-				Panel.GetComponent<ScoreScript>().AddPoints(5);
+                ScoreScript.AddPoints(5);
             }
 		}
 	}
