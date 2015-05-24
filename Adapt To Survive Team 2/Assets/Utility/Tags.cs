@@ -43,7 +43,7 @@ public static class Scenes
 {
     public const string Menu = "Menu";
     public const string Tutorial = "Tutorial";
-    public const string Game = "MainGamePlay";
+    public const string Game = "FinalGamePlay";
 }
 
 public class Parameters

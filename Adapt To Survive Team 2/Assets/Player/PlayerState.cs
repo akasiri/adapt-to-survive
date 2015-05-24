@@ -9,22 +9,15 @@ public class PlayerState : MonoBehaviour {
 	private float dolphinTimer;
 
 	public AudioClip[] animalSounds;
-	private AudioSource[] audioSources;
+
+    private AudioSource aud;
 	private int i = 0;
 
     void Start()
     {
+        aud = transform.Find("Audio").GetComponent<AudioSource>();
         Pause.staticUnPause();
         theStateMachine = GetComponent<Animator>();
-
-		audioSources = new AudioSource[animalSounds.Length];
-		for (int i = 0; i < animalSounds.Length; i++)
-		{
-			GameObject child = new GameObject("Player");
-			child.transform.parent = gameObject.transform;
-			audioSources[i] = child.AddComponent<AudioSource>() as AudioSource;
-			audioSources[i].clip = animalSounds[i];
-		}
 	}
 
 	// Update is called once per frame
@@ -38,10 +31,8 @@ public class PlayerState : MonoBehaviour {
 			Debug.Log ("Monkey");
             theStateMachine.SetInteger(Parameters.State, 1);
             updateSpeed(4);
-
-			stopPlaying(i);
-			audioSources[0].Play();
-			i = 0;
+            aud.clip = animalSounds[0];
+            aud.Play();
 		}
 		else if (Input.GetKeyDown ("2") && animals != 2 && !Pause.isPaused())
 		{
@@ -51,9 +42,8 @@ public class PlayerState : MonoBehaviour {
             theStateMachine.SetInteger(Parameters.State, 2);
             updateSpeed(3.5f);
 
-			stopPlaying(i);
-			audioSources[1].Play();
-			i = 1;
+            aud.clip = animalSounds[1];
+            aud.Play();
 		}
 		else if (Input.GetKeyDown ("3") && animals != 3 && !Pause.isPaused())
 		{
@@ -65,9 +55,8 @@ public class PlayerState : MonoBehaviour {
             theStateMachine.SetInteger(Parameters.State, 3);
             updateSpeed(3f);
 
-			stopPlaying(i);
-			audioSources[2].Play();
-			i = 2;
+            aud.clip = animalSounds[2];
+            aud.Play();
 		}
 		else if (Input.GetKeyDown ("4") && animals != 4 && !Pause.isPaused())
 		{
@@ -77,9 +66,8 @@ public class PlayerState : MonoBehaviour {
             theStateMachine.SetInteger(Parameters.State, 4);
             updateSpeed(4);
 
-			stopPlaying(i);
-			audioSources[3].Play();
-			i = 3;
+            aud.clip = animalSounds[3];
+            aud.Play();
 		}
 		else if (Input.GetKeyDown ("5") && animals != 5 && !Pause.isPaused())
 		{
@@ -89,9 +77,8 @@ public class PlayerState : MonoBehaviour {
             theStateMachine.SetInteger(Parameters.State, 5);
             updateSpeed(3.5f);
 
-			stopPlaying(i);
-			audioSources[4].Play();
-			i = 4;
+            aud.clip = animalSounds[4];
+            aud.Play();
 		}
 		else if (Input.GetKeyDown ("6") && animals != 6 && !Pause.isPaused())
 		{
@@ -101,9 +88,8 @@ public class PlayerState : MonoBehaviour {
             theStateMachine.SetInteger(Parameters.State, 6);
             updateSpeed(4);
 
-			stopPlaying(i);
-			audioSources[5].Play();
-			i = 5;
+            aud.clip = animalSounds[5];
+            aud.Play();
 		}
 
 		if (dolphinTimer > 0) {
@@ -115,12 +101,6 @@ public class PlayerState : MonoBehaviour {
             this.gameObject.GetComponent<PlayerDeath>().Die(tip);
             dolphinTimer = 0;
         }
-	}
-
-	private void stopPlaying(int i)
-	{
-		if (audioSources[i].isPlaying)
-			audioSources[i].Stop();
 	}
 
     void updateSpeed(float speed)
