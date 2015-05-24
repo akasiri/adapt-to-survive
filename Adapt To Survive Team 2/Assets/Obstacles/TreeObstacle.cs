@@ -5,6 +5,6 @@ public class TreeObstacle : Obstacle
 {
     protected override void OnDestroy()
     {
-          GetComponent<AudioSource>().Play();
+		GetComponent<AudioSource>().Play();
     }
 }
