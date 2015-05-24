@@ -9,10 +9,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 474116}
   - 50: {fileID: 5096504}
-  - 61: {fileID: 6113076}
   - 114: {fileID: 11409954}
   - 212: {fileID: 21265228}
   - 82: {fileID: 8264838}
+  - 58: {fileID: 5841366}
   m_Layer: 0
   m_Name: Pitfall
   m_TagString: Pitfall
@@ -27,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 163966}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2.23664331, y: 3.74090052, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -47,19 +47,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!61 &6113076
-BoxCollider2D:
+--- !u!58 &5841366
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 163966}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -.219999999, y: .0299999993}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Radius: .509628296
 --- !u!82 &8264838
 AudioSource:
   m_ObjectHideFlags: 1
