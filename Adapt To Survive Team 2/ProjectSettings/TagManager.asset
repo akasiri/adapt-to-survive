@@ -12,6 +12,7 @@ TagManager:
   - Predator
   - PlayerParticleEffect
   - Light
+  - Bird
   layers:
   - Default
   - TransparentFX

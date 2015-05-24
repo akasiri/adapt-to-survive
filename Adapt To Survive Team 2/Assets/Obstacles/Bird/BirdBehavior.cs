@@ -13,13 +13,36 @@ public class BirdBehavior : MonoBehaviour {
 	void Start () {
         birdAnimator = GetComponent<Animator>();
         rigidBody = GetComponent<Rigidbody2D>();
+
+        GetComponent<Rigidbody2D>().velocity = new Vector3(0, -(0.5f * 3.2f), 0);
+
 //        birdAnimator.SetInteger("currentAction", Random.Range(1, 4));
-        StartCoroutine(DoUpdate());
+//        StartCoroutine(DoUpdate());
 	}
 
     void FixedUpdate() {
+        int rand = Random.Range(1, 100);
 
-//        rigidBody.velocity = new Vector2(0, -(background.GetComponent<BackgroundScript>().speed * 3.2f));
+        if (rand < 1)
+        {
+            birdAnimator.SetInteger("currentAction", 0);
+        }
+        else if (rand < 3)
+        {
+            birdAnimator.SetInteger("currentAction", 1);
+        }
+        else if (rand < 5)
+        {
+            birdAnimator.SetInteger("currentAction", 2);
+        }
+        else if (rand < 7)
+        {
+            birdAnimator.SetInteger("currentAction", 3);
+        }
+        else if (rand < 9)
+        {
+            birdAnimator.SetInteger("currentAction", 4);
+        }
         
         int currentAction = birdAnimator.GetInteger("currentAction");
         if (currentAction == 1)
@@ -38,36 +61,14 @@ public class BirdBehavior : MonoBehaviour {
         {
             this.gameObject.transform.position = this.gameObject.transform.position - new Vector3(0, speed * Time.deltaTime, 0);
         }
-    }
+//    }
 	
 	// Update is called once per frame
-	IEnumerator DoUpdate () {
-        while (true)
-        {
-            int rand = Random.Range(1, 100);
+//	IEnumerator DoUpdate () {
+//        while (true)
+//        {
 
-            if (5 > rand)
-            {
-                birdAnimator.SetInteger("currentAction", 0);
-            }
-            else if (20 > rand)
-            {
-                birdAnimator.SetInteger("currentAction", 1);
-            }
-            else if (35 > rand)
-            {
-                birdAnimator.SetInteger("currentAction", 2);
-            }
-            else if (50 > rand)
-            {
-                birdAnimator.SetInteger("currentAction", 3);
-            }
-            else if (65 > rand)
-            {
-                birdAnimator.SetInteger("currentAction", 4);
-            }
-
-            yield return new WaitForSeconds(1f);
-        }
+//            yield return new WaitForSeconds(1f);
+//        }
     }
 }

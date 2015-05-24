@@ -74,6 +74,9 @@ public class SpawnScript : MonoBehaviour {
 
             LanePos *= 2;
 
+            if (CurrentObstacle.tag == "Bird")
+                LanePos = 5;
+
 			if(!LastPosition.Contains(LanePos)){
 			    Vector3 newvec = new Vector3 (LanePos, 5, 0);
 				GameObject newobj = (GameObject) Instantiate(CurrentObstacle, newvec, this.transform.rotation);
