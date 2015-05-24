@@ -359,21 +359,9 @@ Prefab:
       propertyPath: m_Pivot.y
       value: .5
       objectReference: {fileID: 0}
-    - target: {fileID: 11427888, guid: 98079acc9015990489868c1461fc0943, type: 2}
-      propertyPath: m_Color.b
-      value: .875862122
-      objectReference: {fileID: 0}
-    - target: {fileID: 11427888, guid: 98079acc9015990489868c1461fc0943, type: 2}
-      propertyPath: m_Color.r
+    - target: {fileID: 8294264, guid: 98079acc9015990489868c1461fc0943, type: 2}
+      propertyPath: m_PlayOnAwake
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11427888, guid: 98079acc9015990489868c1461fc0943, type: 2}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11427888, guid: 98079acc9015990489868c1461fc0943, type: 2}
-      propertyPath: m_Text
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 98079acc9015990489868c1461fc0943, type: 2}

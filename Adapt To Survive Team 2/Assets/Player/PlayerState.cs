@@ -10,6 +10,7 @@ public class PlayerState : MonoBehaviour {
 
     void Start()
     {
+        Pause.staticUnPause();
         theStateMachine = GetComponent<Animator>();
     }
 
