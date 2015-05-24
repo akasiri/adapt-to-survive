@@ -25,7 +25,7 @@ public class PlayerDeath : MonoBehaviour {
             //warn dev that they forgot the tip
         }
         GameObject createdTip = Instantiate(tip) as GameObject;
-        createdTip.transform.parent = gameOverDisplay.transform;
+        createdTip.transform.SetParent(gameOverDisplay.transform, false);
 
 	}
 }
