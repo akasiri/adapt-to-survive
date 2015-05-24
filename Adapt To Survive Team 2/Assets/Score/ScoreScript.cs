@@ -75,4 +75,8 @@ public class ScoreScript : MonoBehaviour {
         highscore = 10;
 
     }
+
+	public void AddPoints(int points){
+		_score += points;
+	}
 }
