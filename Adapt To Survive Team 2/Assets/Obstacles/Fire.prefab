@@ -160,11 +160,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 141072}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98fe66f6df8edcd43a3f353c3ba7eaf8, type: 3}
+  m_Script: {fileID: 11500000, guid: d0d194f512f1def4bbc63a345fde91fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objectWeakness: 1
   tip: {fileID: 107594, guid: 5bce96f45408b8445a99d09d44365d8e, type: 2}
+  fireColor: {r: 1, g: .55192697, b: .308823526, a: 1}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21235674
 SpriteRenderer:
   m_ObjectHideFlags: 1

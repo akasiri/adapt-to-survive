@@ -1,0 +1,615 @@
+Initialize engine version: 5.0.1f1 (5a2e8fe35a68)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics 4600 (ID=0x416)
+    Vendor:   Intel
+    VRAM:     896 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Derek\Documents\GitHub\adapt-to-survive\Adapt To Survive Team 2\Builds\StabilizationBuild\Build3PM_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Derek\Documents\GitHub\adapt-to-survive\Adapt To Survive Team 2\Builds\StabilizationBuild\Build3PM_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Derek\Documents\GitHub\adapt-to-survive\Adapt To Survive Team 2\Builds\StabilizationBuild\Build3PM_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Derek\Documents\GitHub\adapt-to-survive\Adapt To Survive Team 2\Builds\StabilizationBuild\Build3PM_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Derek\Documents\GitHub\adapt-to-survive\Adapt To Survive Team 2\Builds\StabilizationBuild\Build3PM_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Derek\Documents\GitHub\adapt-to-survive\Adapt To Survive Team 2\Builds\StabilizationBuild\Build3PM_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.042 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Derek\Documents\GitHub\adapt-to-survive\Adapt To Survive Team 2\Builds\StabilizationBuild\Build3PM_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Derek\Documents\GitHub\adapt-to-survive\Adapt To Survive Team 2\Builds\StabilizationBuild\Build3PM_Data\Managed\System.dll (this message is harmless)
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 524c -> priority: 1 
+  Thread -> id: 4324 -> priority: 1 
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.335117 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 807.
+Total: 0.621379 ms (FindLiveObjects: 0.068852 ms CreateObjectMapping: 0.183890 ms MarkObjects: 0.356234 ms  DeleteObjects: 0.011546 ms)
+
+Porcupine
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hawk
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+dead combo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Coroutine couldn't be started because the the game object 'Fire(Clone)' is inactive!
+ 
+(Filename:  Line: 804)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Monkey
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+dead combo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Coroutine couldn't be started because the the game object 'Boulder(Clone)' is inactive!
+ 
+(Filename:  Line: 804)
+
+Coroutine couldn't be started because the the game object 'Boulder(Clone)' is inactive!
+ 
+(Filename:  Line: 804)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Coroutine couldn't be started because the the game object 'Fire(Clone)' is inactive!
+ 
+(Filename:  Line: 804)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Coroutine couldn't be started because the the game object 'Fire(Clone)' is inactive!
+ 
+(Filename:  Line: 804)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Pause
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Coroutine couldn't be started because the the game object 'Boulder(Clone)' is inactive!
+ 
+(Filename:  Line: 804)
+
+Coroutine couldn't be started because the the game object 'Boulder(Clone)' is inactive!
+ 
+(Filename:  Line: 804)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Coroutine couldn't be started because the the game object 'Boulder(Clone)' is inactive!
+ 
+(Filename:  Line: 804)
+
+Coroutine couldn't be started because the the game object 'Boulder(Clone)' is inactive!
+ 
+(Filename:  Line: 804)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Coroutine couldn't be started because the the game object 'Boulder(Clone)' is inactive!
+ 
+(Filename:  Line: 804)
+
+Coroutine couldn't be started because the the game object 'Boulder(Clone)' is inactive!
+ 
+(Filename:  Line: 804)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+UnloadTime: 5.066403 ms
+
+Unloading 373 unused Assets to reduce memory usage. Loaded Objects now: 306.
+Total: 2.749808 ms (FindLiveObjects: 0.041909 ms CreateObjectMapping: 0.040627 ms MarkObjects: 0.232643 ms  DeleteObjects: 2.434200 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.617103 ms
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 807.
+Total: 0.430646 ms (FindLiveObjects: 0.048752 ms CreateObjectMapping: 0.037205 ms MarkObjects: 0.331430 ms  DeleteObjects: 0.012829 ms)
+
+Porcupine
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Dolphin
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Pause
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Restart
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+UnloadTime: 1.221804 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 807.
+Total: 0.614964 ms (FindLiveObjects: 0.055167 ms CreateObjectMapping: 0.041054 ms MarkObjects: 0.506768 ms  DeleteObjects: 0.011546 ms)
+
+Mole
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Monkey
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hawk
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+High Score Beaten!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Shake
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Freeze
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Coroutine couldn't be started because the the game object 'Fire(Clone)' is inactive!
+ 
+(Filename:  Line: 804)
+
+Pause
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Restart
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Coroutine couldn't be started because the the game object 'Fire(Clone)' is inactive!
+ 
+(Filename:  Line: 804)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Coroutine couldn't be started because the the game object 'Boulder(Clone)' is inactive!
+ 
+(Filename:  Line: 804)
+
+Coroutine couldn't be started because the the game object 'Boulder(Clone)' is inactive!
+ 
+(Filename:  Line: 804)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at WaterObstacle.OnDestroy () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnloadTime: 13.134075 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 807.
+Total: 0.543974 ms (FindLiveObjects: 0.054311 ms CreateObjectMapping: 0.038916 ms MarkObjects: 0.440482 ms  DeleteObjects: 0.009408 ms)
+
+Pause
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+High Score (UnityEngine.UI.Text)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hawk
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Monkey
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+dead combo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Mole
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Coroutine couldn't be started because the the game object 'Fire(Clone)' is inactive!
+ 
+(Filename:  Line: 804)
+
+High Score Beaten!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Shake
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Freeze
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Hawk
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+dead combo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Coroutine couldn't be started because the the game object 'Fire(Clone)' is inactive!
+ 
+(Filename:  Line: 804)
+
+Pause
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Porcupine
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Restart
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Coroutine couldn't be started because the the game object 'Boulder(Clone)' is inactive!
+ 
+(Filename:  Line: 804)
+
+Coroutine couldn't be started because the the game object 'Boulder(Clone)' is inactive!
+ 
+(Filename:  Line: 804)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Coroutine couldn't be started because the the game object 'Boulder(Clone)' is inactive!
+ 
+(Filename:  Line: 804)
+
+Coroutine couldn't be started because the the game object 'Boulder(Clone)' is inactive!
+ 
+(Filename:  Line: 804)
+
+UnloadTime: 3.442605 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 807.
+Total: 0.529006 ms (FindLiveObjects: 0.050890 ms CreateObjectMapping: 0.036350 ms MarkObjects: 0.434067 ms  DeleteObjects: 0.006842 ms)
+
+Mole
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Pause
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Restart
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+UnloadTime: 0.971199 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 807.
+Total: 0.626939 ms (FindLiveObjects: 0.063720 ms CreateObjectMapping: 0.037205 ms MarkObjects: 0.514466 ms  DeleteObjects: 0.011118 ms)
+
+Pause
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Restart
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+UnloadTime: 1.590441 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 807.
+Total: 0.648321 ms (FindLiveObjects: 0.071845 ms CreateObjectMapping: 0.036778 ms MarkObjects: 0.523019 ms  DeleteObjects: 0.016250 ms)
+
+Pause
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+High Score (UnityEngine.UI.Text)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Pause
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+High Score (UnityEngine.UI.Text)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Pause
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+High Score (UnityEngine.UI.Text)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hawk
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Coroutine couldn't be started because the the game object 'Fire(Clone)' is inactive!
+ 
+(Filename:  Line: 804)
+
+Pause
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 398)
+
+UnloadTime: 1.719592 ms
+
+Unloading 374 unused Assets to reduce memory usage. Loaded Objects now: 306.
+Total: 0.928006 ms (FindLiveObjects: 0.073983 ms CreateObjectMapping: 0.042765 ms MarkObjects: 0.390019 ms  DeleteObjects: 0.419527 ms)
+

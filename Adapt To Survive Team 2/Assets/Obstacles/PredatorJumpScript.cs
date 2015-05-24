@@ -8,6 +8,7 @@ public class PredatorJumpScript : MonoBehaviour {
         if (!other.CompareTag(Tags.Player) || jumped)
             return;
         GetComponent<AudioSource>().Play();
+        transform.parent.Find("SpeedParticles").GetComponent<ParticleSystem>().Play();
         jumped = true;
         StartCoroutine(Jump());
     }
