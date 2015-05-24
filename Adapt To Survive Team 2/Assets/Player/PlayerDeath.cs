@@ -15,6 +15,7 @@ public class PlayerDeath : MonoBehaviour {
 
 	public void Die (GameObject tip = null) {
         mix.TransitionTo(0.01f);
+        PauseOnInput.SetGameOver(true);
         GetComponent<Pause>().pause();
 		gameOverDisplay.SetActive (true);
         optionsButton.SetActive(false);
