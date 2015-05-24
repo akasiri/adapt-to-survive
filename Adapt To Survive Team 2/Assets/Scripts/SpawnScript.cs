@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class SpawnScript : MonoBehaviour {
 	public Queue<GameObject> Obstacles;
-	public int DifficultyIncreaseInterval = 20; //Seconds
+	public int DifficultyIncreaseInterval = 15; //Seconds
 	int DifficultyLevel = 0;
 	public List<GameObject> Objects;
 	public List<GameObject> SpawnedObjects;
@@ -22,7 +22,7 @@ public class SpawnScript : MonoBehaviour {
 	void newQueue()
 	{
 		int index;
-		for (int i = 0; i < 15; i++) 
+		for (int i = 0; i < 10; i++) 
 		{
 			index = Random.Range(0,Objects.Count);
 			Obstacles.Enqueue(Objects[index]);
@@ -37,7 +37,10 @@ public class SpawnScript : MonoBehaviour {
 			CurrentTime = 0;
 			DifficultyLevel += 1;
             
-            SpawnRate = SpawnRate *= 0.8f < 1 ? 1 : SpawnRate *= 0.8f;
+			SpawnRate *= 0.9f; 
+			if(SpawnRate < 1.5f)
+				SpawnRate = 1.5f;
+
 
 			CancelInvoke("SpawnObstacle");
 
@@ -52,7 +55,12 @@ public class SpawnScript : MonoBehaviour {
 
 	void SpawnObstacle(){
         int Objects = 0;
-        int ObjectLimit = DifficultyLevel >= 2 ? 2 : 1;
+		int ObjectLimit;
+		if(DifficultyLevel >= 4)
+			ObjectLimit = 3;
+		else
+			ObjectLimit = DifficultyLevel >= 2 ? 2 : 1;
+        
 		List<int> LastPosition = new List<int>();
         while (Objects < ObjectLimit)
         {
@@ -70,7 +78,7 @@ public class SpawnScript : MonoBehaviour {
 			    SpawnedObjects.Add (newobj);
 			    Invoke ("DestroyObstacle", 10f);
 			
-			    if (Obstacles.Count <= 2)
+			    if (Obstacles.Count <= 3)
 				    newQueue ();
 
 			    Objects+=1;
