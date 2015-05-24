@@ -30,11 +30,8 @@ public class PlayerState : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-<<<<<<< HEAD
 		if (Input.GetKeyDown ("1") && animals != 1 && !Pause.isPaused()) 
-=======
-		if ((Input.GetKeyDown(KeyCode.U) || Input.GetKeyDown ("1")) && animals != 1) 
->>>>>>> 145be2687765c63b0ce793cda08071de0bc285f8
+
 		{
 			animals = 1;
 			dolphinTimer = 0f;
@@ -46,11 +43,7 @@ public class PlayerState : MonoBehaviour {
 			audioSources[0].Play();
 			i = 0;
 		}
-<<<<<<< HEAD
 		else if (Input.GetKeyDown ("2") && animals != 2 && !Pause.isPaused())
-=======
-        else if ((Input.GetKeyDown(KeyCode.I) || Input.GetKeyDown("2")) && animals != 2)
->>>>>>> 145be2687765c63b0ce793cda08071de0bc285f8
 		{
 			animals = 2;
 			dolphinTimer = 0f;
@@ -62,11 +55,7 @@ public class PlayerState : MonoBehaviour {
 			audioSources[1].Play();
 			i = 1;
 		}
-<<<<<<< HEAD
 		else if (Input.GetKeyDown ("3") && animals != 3 && !Pause.isPaused())
-=======
-        else if ((Input.GetKeyDown(KeyCode.O) || Input.GetKeyDown("3")) && animals != 3)
->>>>>>> 145be2687765c63b0ce793cda08071de0bc285f8
 		{
 			animals = 3;
 
@@ -80,11 +69,7 @@ public class PlayerState : MonoBehaviour {
 			audioSources[2].Play();
 			i = 2;
 		}
-<<<<<<< HEAD
 		else if (Input.GetKeyDown ("4") && animals != 4 && !Pause.isPaused())
-=======
-        else if ((Input.GetKeyDown(KeyCode.J) || Input.GetKeyDown("4")) && animals != 4)
->>>>>>> 145be2687765c63b0ce793cda08071de0bc285f8
 		{
 			animals = 4;
 			dolphinTimer = 0f;
@@ -96,11 +81,7 @@ public class PlayerState : MonoBehaviour {
 			audioSources[3].Play();
 			i = 3;
 		}
-<<<<<<< HEAD
 		else if (Input.GetKeyDown ("5") && animals != 5 && !Pause.isPaused())
-=======
-        else if ((Input.GetKeyDown(KeyCode.K) || Input.GetKeyDown("5")) && animals != 5)
->>>>>>> 145be2687765c63b0ce793cda08071de0bc285f8
 		{
 			animals = 5;
 			dolphinTimer = 0f;;
@@ -112,11 +93,7 @@ public class PlayerState : MonoBehaviour {
 			audioSources[4].Play();
 			i = 4;
 		}
-<<<<<<< HEAD
 		else if (Input.GetKeyDown ("6") && animals != 6 && !Pause.isPaused())
-=======
-        else if ((Input.GetKeyDown(KeyCode.L) || Input.GetKeyDown("6")) && animals != 6)
->>>>>>> 145be2687765c63b0ce793cda08071de0bc285f8
 		{
 			animals = 6;
 			dolphinTimer = 0f;
