@@ -22,7 +22,7 @@ public class SpawnScript : MonoBehaviour {
 	void newQueue()
 	{
 		int index;
-		for (int i = 0; i < 15; i++) 
+		for (int i = 0; i < 10; i++) 
 		{
 			index = Random.Range(0,Objects.Count);
 			Obstacles.Enqueue(Objects[index]);
@@ -47,7 +47,7 @@ public class SpawnScript : MonoBehaviour {
 
 	void DestroyObstacle(){
 		SpawnedObjects.Remove (SpawnedObjects[0]);
-		Destroy(SpawnedObjects[0],0f);
+		Destroy (SpawnedObjects[0]);
 	}	
 
 	void SpawnObstacle(){
@@ -56,21 +56,14 @@ public class SpawnScript : MonoBehaviour {
 		List<int> LastPosition = new List<int>();
         while (Objects < ObjectLimit)
         {
-            GameObject CurrentObstacle = Obstacles.Dequeue();
-            int LanePos = Random.Range(0, 3);
-            
-			if (CurrentObstacle.tag == Tags.Tree)
-                LanePos = Random.value < 0.5f ? 0 : 2;
-
-            LanePos *= 2;
-
+			int LanePos = Random.Range (0, 3) * 2;
 			if(!LastPosition.Contains(LanePos)){
 			    Vector3 newvec = new Vector3 (LanePos, 5, 0);
-				GameObject newobj = (GameObject) Instantiate(CurrentObstacle, newvec, this.transform.rotation);
+			    GameObject newobj = (GameObject)Instantiate (Obstacles.Dequeue (), newvec, this.transform.rotation);
 			    SpawnedObjects.Add (newobj);
 			    Invoke ("DestroyObstacle", 10f);
 			
-			    if (Obstacles.Count <= 2)
+			    if (Obstacles.Count < 2)
 				    newQueue ();
 
 			    Objects+=1;
