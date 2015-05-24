@@ -7,6 +7,7 @@ public class Obstacle : MonoBehaviour
     [HideInInspector]
 	public int objectWeakness = 1;
     public GameObject tip;
+    private bool triggered = false;
     void Start()
     {
         //temp code
@@ -57,8 +58,9 @@ public class Obstacle : MonoBehaviour
                 // player die
                 coll.gameObject.GetComponent<PlayerDeath>().Die(tip);
             }
-            else
+            else if(!triggered)
             {
+                triggered = true; //this code will only be called once per object
                 ScoreScript.AddPoints(5, this.tag);
                 OnDestroy();
                 
