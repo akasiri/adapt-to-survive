@@ -12,7 +12,7 @@ GameObject:
   - 61: {fileID: 6148338}
   - 114: {fileID: 11436622}
   - 212: {fileID: 21295012}
-  - 95: {fileID: 9505648}
+  - 95: {fileID: 9518604}
   m_Layer: 0
   m_Name: Boulder
   m_TagString: Boulder
@@ -60,7 +60,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
---- !u!95 &9505648
+--- !u!95 &9518604
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
@@ -69,7 +69,7 @@ Animator:
   m_GameObject: {fileID: 164164}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: affc9f95da1c9f54ca15b976de94dd5f, type: 2}
+  m_Controller: {fileID: 9100000, guid: ecf0061127fb7574f8bb40f1fe34e85a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
