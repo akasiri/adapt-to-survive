@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class SpawnScript : MonoBehaviour {
 	public Queue<GameObject> Obstacles;
 	public int DifficultyIncreaseInterval = 20; //Seconds
+	int DifficultyLevel = 1;
 	public List<GameObject> Objects;
 	public List<GameObject> SpawnedObjects;
 	public float SpawnRate = 3f;
@@ -33,10 +34,14 @@ public class SpawnScript : MonoBehaviour {
 		CurrentTime += 1;
 		if(CurrentTime >= DifficultyIncreaseInterval){
 			CurrentTime = 0;
+			DifficultyLevel += 1;
 			SpawnRate *= 0.8f;
 			Debug.Log("harder");
 			CancelInvoke("SpawnObstacle");
-			InvokeRepeating ("SpawnObstacle",0f, SpawnRate);
+			if(DifficultyLevel >=2)
+				InvokeRepeating ("SpawnObstacle2",0f, SpawnRate);
+			else
+				InvokeRepeating ("SpawnObstacle",0f, SpawnRate);
 		}
 	}
 
@@ -51,6 +56,7 @@ public class SpawnScript : MonoBehaviour {
 //				SpawnedObjects[i].GetComponent<Obstacle>().speed = newspeed;
 //		}
 //	}
+	
 
 	void SpawnObstacle(){
 		Vector3 newvec = new Vector3 (Random.Range (0, 3)*2, 5, 0);
@@ -59,7 +65,29 @@ public class SpawnScript : MonoBehaviour {
 		//newobj.GetComponent<Obstacle> ().speed = obj_speed;
 		SpawnedObjects.Add (newobj);
 		Invoke ("DestroyObstacle", 5f);
-		if (Obstacles.Count <= 0)
+		if (Obstacles.Count <= 2)
 			newQueue ();
+	}
+
+	void SpawnObstacle2(){
+		int Objects = 0;
+		List<int> LastPosition = new List<int>();
+		while (Objects<2) {
+			int LanePos = Random.Range (0, 3) * 2;
+			if(!LastPosition.Contains(LanePos)){
+			Vector3 newvec = new Vector3 (LanePos, 5, 0);
+			GameObject newobj = (GameObject)Instantiate (Obstacles.Dequeue (), newvec, this.transform.rotation);
+			//float obj_speed = GameObject.Find("Player").GetComponent<PlayerState>().currentSpeed;
+			//newobj.GetComponent<Obstacle> ().speed = obj_speed;
+			SpawnedObjects.Add (newobj);
+			Invoke ("DestroyObstacle", 5f);
+			if (Obstacles.Count < 3)
+				newQueue ();
+
+			Objects+=1;
+			LastPosition.Add(LanePos);
+			}
+
+		}
 	}
 }
