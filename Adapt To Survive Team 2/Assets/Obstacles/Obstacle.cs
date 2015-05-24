@@ -49,7 +49,7 @@ public class Obstacle : MonoBehaviour
 	 */
 	void OnTriggerEnter2D(Collider2D coll) 
 	{
-        Debug.Log("Hit!");
+        Debug.Log(this.tag);
 		if (coll.gameObject.tag == "Player") 
 		{
             if (coll.gameObject.GetComponent<PlayerState>().animals != objectWeakness)
