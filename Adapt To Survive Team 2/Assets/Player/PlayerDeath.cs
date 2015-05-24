@@ -7,7 +7,7 @@ public class PlayerDeath : MonoBehaviour {
 	public GameObject background;
 	public GameObject gameOverDisplay;
     public GameObject optionsButton;
-	// P	ublic because it is being called in Obstacle.cs
+	// Public because it is being called in Obstacle.cs
 	// Is this wise?
     public void Start()
     {
