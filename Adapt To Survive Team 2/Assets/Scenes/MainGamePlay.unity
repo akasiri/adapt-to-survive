@@ -159,7 +159,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!224 &348760674 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 22456274, guid: 98079acc9015990489868c1461fc0943,
@@ -787,6 +787,26 @@ Prefab:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22403154, guid: e20dd682907a541489382f0963d54baf, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22405588, guid: e20dd682907a541489382f0963d54baf, type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22405588, guid: e20dd682907a541489382f0963d54baf, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22429098, guid: e20dd682907a541489382f0963d54baf, type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22429098, guid: e20dd682907a541489382f0963d54baf, type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22429098, guid: e20dd682907a541489382f0963d54baf, type: 2}
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}

@@ -10,9 +10,10 @@ public class WaterObstacle : Obstacle {
         GameObject player = GameObject.FindGameObjectWithTag(Tags.Player);
         particle = player.transform.Find("SplashEffect").GetComponent<ParticleSystem>();
         particle.startColor = new Color(1, 1, 1, 0.4f);
-        particle.Play();
+        
         if (!played)
         {
+            particle.Play();
             GetComponent<AudioSource>().Play();
             played = true;
         }
