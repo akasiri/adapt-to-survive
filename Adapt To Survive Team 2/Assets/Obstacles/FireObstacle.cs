@@ -16,7 +16,8 @@ public class FireObstacle : Obstacle
 
     void OnTriggerExit2D(Collider2D other)
     {
-        StartCoroutine(noFire(0.5f));
+        if(other.CompareTag(Tags.Player))
+            StartCoroutine(noFire(0.5f));
     }
 
     private IEnumerator setFire(float duration)
