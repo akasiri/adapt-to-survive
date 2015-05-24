@@ -6,11 +6,17 @@ public class ScoreScript : MonoBehaviour {
     public AudioMixerSnapshot mix;
     public AudioMixerSnapshot defaultmix;
 
+    private static float countDelay = 0.25f;
+
+    private AudioSource aud;
     private Text text;
+    private Text extra;
+    private static int extraPoints = 0;
     private static float _score = 0;
     private static float highscore;
     private static bool highscoreBeaten = false;
     private ParticleSystem particle;
+    private static ScoreScript thi;
     public static int Score
     {
         get { return (int)_score; }
@@ -27,12 +33,15 @@ public class ScoreScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        aud = GetComponent<AudioSource>();
+        extra = transform.Find("BonusScore").GetComponent<Text>();
         text = GetComponent<Text>();
         particle = transform.Find("DingSwirlGlow").GetComponent<ParticleSystem>(); //ignore the error this throws in the menu screen
         if (PlayerPrefs.HasKey(Options.HighScore)) // set scores from stored values
             highscore = PlayerPrefs.GetInt(Options.HighScore);
         else
             highscore = 10;
+        thi = this;
 	}
 	
 	// Update is called once per frame
@@ -77,6 +86,33 @@ public class ScoreScript : MonoBehaviour {
     }
 
 	public static void AddPoints(int points){
-		_score += points;
+		extraPoints += points;
+        thi.StartCoroutine(ExtraPoints());
 	}
+
+    private static IEnumerator ExtraPoints()
+    {
+        thi.extra.text = "(+" + extraPoints.ToString() + ")";
+        yield return new WaitForSeconds(countDelay * 2);
+
+        while (extraPoints > 0)
+        {
+            thi.aud.Play();
+            if (extraPoints >= 2)
+            {
+                extraPoints -= 2;
+                _score += 2;
+                thi.extra.text = "(+" + extraPoints.ToString() + ")";
+            }
+            else //extra points == 1
+            {
+                extraPoints -= 1;
+                _score += 1;
+                thi.extra.text = "";
+            }
+            
+            yield return new WaitForSeconds(countDelay);
+
+        }
+    }
 }
