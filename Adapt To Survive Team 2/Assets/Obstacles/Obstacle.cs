@@ -11,12 +11,11 @@ public class Obstacle : MonoBehaviour
     {
         //temp code
 		GetComponent<Rigidbody2D>().velocity = new Vector3(0, -speed, 0);
+        setObjectWeakness();
     }
 
 	void Update()
 	{
-		GetComponent<Rigidbody2D>().velocity = new Vector3(0, -speed, 0);
-		setObjectWeakness();
 		changeSpeed();
 	}
 
@@ -45,7 +44,7 @@ public class Obstacle : MonoBehaviour
 		}
 	}
 
-	void setObjectWeakness()
+	protected void setObjectWeakness()
 	{
 		switch (gameObject.tag) 
 		{
