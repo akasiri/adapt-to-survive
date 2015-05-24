@@ -45,18 +45,18 @@ public class SpawnScript : MonoBehaviour {
 		Destroy (SpawnedObjects[0]);
 	}
 
-	public void ChangeSpeed(float newspeed){
-		for (int i =0; i< SpawnedObjects.Count; i++) {
-			if(SpawnedObjects[i])
-				SpawnedObjects[i].GetComponent<Obstacle>().speed = newspeed;
-		}
-	}
+//	public void ChangeSpeed(float newspeed){
+//		for (int i =0; i< SpawnedObjects.Count; i++) {
+//			if(SpawnedObjects[i])
+//				SpawnedObjects[i].GetComponent<Obstacle>().speed = newspeed;
+//		}
+//	}
 
 	void SpawnObstacle(){
 		Vector3 newvec = new Vector3 (Random.Range (0, 3)*2, 5, 0);
 		GameObject newobj = (GameObject) Instantiate (Obstacles.Dequeue(), newvec, this.transform.rotation);
-		float obj_speed = GameObject.Find("Player").GetComponent<PlayerState>().currentSpeed;
-		newobj.GetComponent<Obstacle> ().speed = obj_speed;
+		//float obj_speed = GameObject.Find("Player").GetComponent<PlayerState>().currentSpeed;
+		//newobj.GetComponent<Obstacle> ().speed = obj_speed;
 		SpawnedObjects.Add (newobj);
 		Invoke ("DestroyObstacle", 5f);
 		if (Obstacles.Count <= 0)

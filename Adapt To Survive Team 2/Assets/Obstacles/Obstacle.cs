@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Obstacle : MonoBehaviour 
 {
-	public float speed;
+	public float speed = -3f;
 	public int objectWeakness = 1;
 
     void Start()
@@ -70,4 +70,4 @@ public class Obstacle : MonoBehaviour
     protected virtual void OnDestroy()
     {
     }
-}
+} = -3
