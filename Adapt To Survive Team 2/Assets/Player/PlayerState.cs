@@ -5,17 +5,17 @@ public class PlayerState : MonoBehaviour {
 
 	public int animals = 1;
     private Animator theStateMachine;
-	// Update is called once per frame
+
+	private float dolphinTimer;
 
     void Start()
     {
-
-
         theStateMachine = GetComponent<Animator>();
     }
+
+	// Update is called once per frame
 	void Update () 
 	{
-
 		if (Input.GetKeyDown ("1") && animals != 1) 
 		{
 			animals = 1;
@@ -32,12 +32,16 @@ public class PlayerState : MonoBehaviour {
 		else if (Input.GetKeyDown ("3") && animals != 3)
 		{
 			animals = 3;
+
+			dolphinTimer = 2f;
+
 			Debug.Log ("Dolphin");
             theStateMachine.SetInteger(Parameters.State, 3);
 		}
 		else if (Input.GetKeyDown ("4") && animals != 4)
 		{
 			animals = 4;
+
 			Debug.Log ("Bear");
             theStateMachine.SetInteger(Parameters.State, 4);
 		}
@@ -53,6 +57,26 @@ public class PlayerState : MonoBehaviour {
 			Debug.Log ("Porcupine");
             theStateMachine.SetInteger(Parameters.State, 6);
 		}
+
+		if (dolphinTimer > 0) {
+			dolphinTimer -= Time.deltaTime;
+		}
+
+		if (dolphinTimer < 0)
+			this.gameObject.GetComponent<PlayerDeath>().Die();
 	}
 
+	void OnTriggerEnter2D(Collider2D col)
+	{
+		if (col.gameObject.tag == "Water") {
+			dolphinTimer = 0;
+		}
+	}
+
+	void OnTriggerExit2D(Collider2D col)
+	{
+		if (col.gameObject.tag == "Water") {
+			dolphinTimer = 2f;
+		}
+	}
 }
