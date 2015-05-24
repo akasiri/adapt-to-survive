@@ -159,6 +159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectWeakness: 1
+  tip: {fileID: 119178, guid: 94117799394597f43ae1b3fa1c1fb658, type: 2}
 --- !u!212 &21207612
 SpriteRenderer:
   m_ObjectHideFlags: 1
