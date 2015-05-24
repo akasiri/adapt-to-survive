@@ -3,12 +3,13 @@ using System.Collections;
 
 public class MonkeyStateBehaviour : StateMachineBehaviour {
     public Color color;
-
+    public Sprite sprite;
 
 	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
         foreach (GameObject particleHolder in GameObject.FindGameObjectsWithTag(Tags.PlayerParticleEffect))
                particleHolder.GetComponent<ParticleSystem>().startColor = color;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<SpriteRenderer>().sprite = sprite;
 	}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
