@@ -7,6 +7,7 @@ using System.Collections;
 public class Tags : MonoBehaviour {
     public const string Player = "Player";
     public const string PlayerParticleEffect = "PlayerParticleEffect";
+    public const string Light = "Light";
 }
 
 public static class Options

@@ -11,6 +11,7 @@ TagManager:
   - Pitfall
   - Predator
   - PlayerParticleEffect
+  - Light
   layers:
   - Default
   - TransparentFX
