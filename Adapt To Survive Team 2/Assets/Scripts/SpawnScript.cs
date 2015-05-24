@@ -36,17 +36,12 @@ public class SpawnScript : MonoBehaviour {
 		if(CurrentTime >= DifficultyIncreaseInterval){
 			CurrentTime = 0;
 			DifficultyLevel += 1;
-			SpawnRate *= 0.8f;
-
-			if(SpawnRate < 1)
-					SpawnRate= 1f;
+            
+            SpawnRate = SpawnRate *= 0.8f < 1 ? 1 : SpawnRate *= 0.8f;
 
 			CancelInvoke("SpawnObstacle");
 
-			if(DifficultyLevel >=2)
-				InvokeRepeating ("SpawnObstacle2",0f, SpawnRate);
-			else
-				InvokeRepeating ("SpawnObstacle",0f, SpawnRate);
+			InvokeRepeating ("SpawnObstacle",0f, SpawnRate);
 		}
 	}
 
@@ -56,32 +51,23 @@ public class SpawnScript : MonoBehaviour {
 	}	
 
 	void SpawnObstacle(){
-		Vector3 newvec = new Vector3 (Random.Range (0, 3)*2, 5, 0);
-		GameObject newobj = (GameObject) Instantiate (Obstacles.Dequeue(), newvec, this.transform.rotation);
-		//float obj_speed = GameObject.Find("Player").GetComponent<PlayerState>().currentSpeed;
-		//newobj.GetComponent<Obstacle> ().speed = obj_speed;
-		SpawnedObjects.Add (newobj);
-		Invoke ("DestroyObstacle", 10f); //to account for slower animals (i.e. bear)
-		if (Obstacles.Count <= 2)
-			newQueue ();
-	}
-
-	void SpawnObstacle2(){
-		int Objects = 0;
+        int Objects = 0;
+        int ObjectLimit = DifficultyLevel >= 2 ? 2 : 1;
 		List<int> LastPosition = new List<int>();
-		while (Objects<2) {
+        while (Objects < ObjectLimit)
+        {
 			int LanePos = Random.Range (0, 3) * 2;
 			if(!LastPosition.Contains(LanePos)){
-			Vector3 newvec = new Vector3 (LanePos, 5, 0);
-			GameObject newobj = (GameObject)Instantiate (Obstacles.Dequeue (), newvec, this.transform.rotation);
-			SpawnedObjects.Add (newobj);
-			Invoke ("DestroyObstacle", 5f);
+			    Vector3 newvec = new Vector3 (LanePos, 5, 0);
+			    GameObject newobj = (GameObject)Instantiate (Obstacles.Dequeue (), newvec, this.transform.rotation);
+			    SpawnedObjects.Add (newobj);
+			    Invoke ("DestroyObstacle", 5f);
 			
-			if (Obstacles.Count < 3)
-				newQueue ();
+			    if (Obstacles.Count < 2)
+				    newQueue ();
 
-			Objects+=1;
-			LastPosition.Add(LanePos);
+			    Objects+=1;
+			    LastPosition.Add(LanePos);
 			}
 		}
 	}

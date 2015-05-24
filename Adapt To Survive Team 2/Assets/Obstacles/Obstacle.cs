@@ -19,22 +19,22 @@ public class Obstacle : MonoBehaviour
 	{
 		switch (gameObject.tag) 
 		{
-			case "Tree":
+			case Tags.Tree:
 				objectWeakness = 1;
 				break;
-			case "Pitfall":
+			case Tags.Pitfall:
 				objectWeakness = 2;
 				break;
-			case "Water":
+			case Tags.Water:
 				objectWeakness = 3;
 				break;
-			case "Boulder":
+			case Tags.Boulder:
 				objectWeakness = 4;
 				break;
-			case "Fire":
+			case Tags.Fire:
 				objectWeakness = 5;
 				break;
-			case "Predator":
+			case Tags.Predator:
 				objectWeakness = 6;
 				break;
 		}
@@ -51,7 +51,7 @@ public class Obstacle : MonoBehaviour
 	void OnTriggerEnter2D(Collider2D coll) 
 	{
         Debug.Log(this.tag);
-		if (coll.gameObject.tag == "Player") 
+		if (coll.gameObject.tag == Tags.Player) 
 		{
             if (coll.gameObject.GetComponent<PlayerState>().animals != objectWeakness)
             {
