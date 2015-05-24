@@ -70,4 +70,4 @@ public class Obstacle : MonoBehaviour
     protected virtual void OnDestroy()
     {
     }
-} = -3
+}
