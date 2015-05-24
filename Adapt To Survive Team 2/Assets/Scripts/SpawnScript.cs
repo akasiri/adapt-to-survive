@@ -6,6 +6,7 @@ public class SpawnScript : MonoBehaviour {
 	public Queue<GameObject> Obstacles;
 	public int DifficultyIncreaseInterval = 20; //Seconds
 	public List<GameObject> Objects;
+	public List<GameObject> SpawnedObjects;
 	public float SpawnRate = 3f;
 	int CurrentTime = 0;
 	List<int> Lanes;
@@ -39,10 +40,25 @@ public class SpawnScript : MonoBehaviour {
 		}
 	}
 
+	void DestroyObstacle(){
+		SpawnedObjects.Remove (SpawnedObjects[0]);
+		Destroy (SpawnedObjects[0]);
+	}
+
+	public void ChangeSpeed(float newspeed){
+		for (int i =0; i< SpawnedObjects.Count; i++) {
+			if(SpawnedObjects[i])
+				SpawnedObjects[i].GetComponent<Obstacle>().speed = newspeed;
+		}
+	}
+
 	void SpawnObstacle(){
 		Vector3 newvec = new Vector3 (Random.Range (0, 3)*2, 5, 0);
 		GameObject newobj = (GameObject) Instantiate (Obstacles.Dequeue(), newvec, this.transform.rotation);
-		Destroy (newobj, 5f);
+		float obj_speed = GameObject.Find("Player").GetComponent<PlayerState>().currentSpeed;
+		newobj.GetComponent<Obstacle> ().speed = obj_speed;
+		SpawnedObjects.Add (newobj);
+		Invoke ("DestroyObstacle", 5f);
 		if (Obstacles.Count <= 0)
 			newQueue ();
 	}
