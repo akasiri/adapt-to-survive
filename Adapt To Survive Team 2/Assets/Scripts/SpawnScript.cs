@@ -61,7 +61,7 @@ public class SpawnScript : MonoBehaviour {
 			    Vector3 newvec = new Vector3 (LanePos, 5, 0);
 			    GameObject newobj = (GameObject)Instantiate (Obstacles.Dequeue (), newvec, this.transform.rotation);
 			    SpawnedObjects.Add (newobj);
-			    Invoke ("DestroyObstacle", 5f);
+			    Invoke ("DestroyObstacle", 10f);
 			
 			    if (Obstacles.Count < 2)
 				    newQueue ();
