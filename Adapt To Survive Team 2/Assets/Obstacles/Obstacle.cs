@@ -4,8 +4,9 @@ using UnityEngine.UI;
 public class Obstacle : MonoBehaviour 
 {
 	public static float speed = 3f;
+    [HideInInspector]
 	public int objectWeakness = 1;
-
+    public GameObject tip;
     void Start()
     {
         //temp code
@@ -85,7 +86,7 @@ public class Obstacle : MonoBehaviour
             if (coll.gameObject.GetComponent<PlayerState>().animals != objectWeakness)
             {
                 // player die
-                coll.gameObject.GetComponent<PlayerDeath>().Die();
+                coll.gameObject.GetComponent<PlayerDeath>().Die(tip);
             }
             else
             {

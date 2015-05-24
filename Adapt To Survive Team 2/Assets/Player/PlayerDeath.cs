@@ -13,13 +13,19 @@ public class PlayerDeath : MonoBehaviour {
     {
     }
 
-	public void Die () {
+	public void Die (GameObject tip = null) {
         mix.TransitionTo(0.01f);
         GetComponent<Pause>().pause();
 		gameOverDisplay.SetActive (true);
         optionsButton.SetActive(false);
         ScoreScript.Save();
         GameObject.FindGameObjectWithTag(Tags.Light).GetComponent<Light>().intensity = 1.0f;
+        if (tip == null)
+        {
+            //warn dev that they forgot the tip
+        }
+        GameObject createdTip = Instantiate(tip) as GameObject;
+        createdTip.transform.parent = gameOverDisplay.transform;
 
 	}
 }
