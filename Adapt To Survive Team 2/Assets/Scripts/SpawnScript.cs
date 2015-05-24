@@ -64,7 +64,7 @@ public class SpawnScript : MonoBehaviour {
 		//float obj_speed = GameObject.Find("Player").GetComponent<PlayerState>().currentSpeed;
 		//newobj.GetComponent<Obstacle> ().speed = obj_speed;
 		SpawnedObjects.Add (newobj);
-		Invoke ("DestroyObstacle", 5f);
+		Invoke ("DestroyObstacle", 10f); //to account for slower animals (i.e. bear)
 		if (Obstacles.Count <= 2)
 			newQueue ();
 	}
