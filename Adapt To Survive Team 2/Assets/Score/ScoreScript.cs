@@ -21,6 +21,9 @@ public class ScoreScript : MonoBehaviour {
     private static float highscore;
     private static bool highscoreBeaten = false;
     private static bool comboCompleteFlag = false;
+
+    private static bool extraPointsFlag = false;
+
     private ParticleSystem particle;
     private static ScoreScript thi;
 
@@ -169,25 +172,32 @@ public class ScoreScript : MonoBehaviour {
     {
         thi.extra.text = "(+" + extraPoints.ToString() + ")";
         yield return new WaitForSeconds(countDelay * 2);
-
-        while (extraPoints > 0)
+        if (!extraPointsFlag)
         {
-            thi.aud.Play();
-            if (extraPoints >= 2)
-            {
-                extraPoints -= 2;
-                _score += 2;
-                thi.extra.text = "(+" + extraPoints.ToString() + ")";
-            }
-            else //extra points == 1
-            {
-                extraPoints -= 1;
-                _score += 1;
-                thi.extra.text = "";
-            }
-            Pause.Freeze(0.05f);
-            yield return new WaitForSeconds(countDelay);
+            extraPointsFlag = true;
+            
 
+            while (extraPoints > 0)
+            {
+                thi.aud.Play();
+                if (extraPoints >= 3)
+                {
+                    extraPoints -= 2;
+                    _score += 2;
+                    thi.extra.text = "(+" + extraPoints.ToString() + ")";
+                }
+                else //extra points == 1 or 2
+                {
+                    _score += extraPoints;
+                    extraPoints = 0;
+                    
+                    thi.extra.text = "";
+                }
+                Pause.Freeze(0.05f);
+                yield return new WaitForSeconds(countDelay);
+
+            }
+            extraPointsFlag = false;
         }
     }
 }
