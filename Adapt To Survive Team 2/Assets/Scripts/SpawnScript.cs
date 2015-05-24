@@ -30,12 +30,19 @@ public class SpawnScript : MonoBehaviour {
 	}
 
 	void TimeControl(){
+
 		CurrentTime += 1;
+
 		if(CurrentTime >= DifficultyIncreaseInterval){
 			CurrentTime = 0;
 			DifficultyLevel += 1;
-			SpawnRate = SpawnRate *= 0.8f > 1 ? SpawnRate *= 0.8f : 1;
+			SpawnRate *= 0.8f;
+
+			if(SpawnRate < 1)
+					SpawnRate= 1f;
+
 			CancelInvoke("SpawnObstacle");
+
 			if(DifficultyLevel >=2)
 				InvokeRepeating ("SpawnObstacle2",0f, SpawnRate);
 			else
