@@ -18,6 +18,7 @@ public class PlayerDeath : MonoBehaviour {
         GetComponent<Pause>().pause();
 		gameOverDisplay.SetActive (true);
         optionsButton.SetActive(false);
+        PauseOnInput.SetGameOver(true);
         ScoreScript.Save();
         GameObject.FindGameObjectWithTag(Tags.Light).GetComponent<Light>().intensity = 1.0f;
         if (tip == null)

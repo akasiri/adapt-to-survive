@@ -9,7 +9,9 @@ public class Restart : MonoBehaviour {
         Debug.Log("Restart");
         GetComponent<Pause>().unPause();
         mix.TransitionTo(0.01f);
+        PauseOnInput.SetGameOver(false);
         Application.LoadLevel(Application.loadedLevel);
+        
 	}
 
     public void GoToMainMenu()
