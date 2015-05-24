@@ -30,7 +30,7 @@ public class PlayerState : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		if (Input.GetKeyDown ("1") && animals != 1 && !Pause.getPaused()) 
+		if (Input.GetKeyDown ("1") && animals != 1 && !Pause.isPaused()) 
 		{
 			animals = 1;
 			dolphinTimer = 0f;
@@ -42,7 +42,7 @@ public class PlayerState : MonoBehaviour {
 			audioSources[0].Play();
 			i = 0;
 		}
-		else if (Input.GetKeyDown ("2") && animals != 2 && !Pause.getPaused())
+		else if (Input.GetKeyDown ("2") && animals != 2 && !Pause.isPaused())
 		{
 			animals = 2;
 			dolphinTimer = 0f;
@@ -54,7 +54,7 @@ public class PlayerState : MonoBehaviour {
 			audioSources[1].Play();
 			i = 1;
 		}
-		else if (Input.GetKeyDown ("3") && animals != 3 && !Pause.getPaused())
+		else if (Input.GetKeyDown ("3") && animals != 3 && !Pause.isPaused())
 		{
 			animals = 3;
 
@@ -68,7 +68,7 @@ public class PlayerState : MonoBehaviour {
 			audioSources[2].Play();
 			i = 2;
 		}
-		else if (Input.GetKeyDown ("4") && animals != 4 && !Pause.getPaused())
+		else if (Input.GetKeyDown ("4") && animals != 4 && !Pause.isPaused())
 		{
 			animals = 4;
 			dolphinTimer = 0f;
@@ -80,7 +80,7 @@ public class PlayerState : MonoBehaviour {
 			audioSources[3].Play();
 			i = 3;
 		}
-		else if (Input.GetKeyDown ("5") && animals != 5 && !Pause.getPaused())
+		else if (Input.GetKeyDown ("5") && animals != 5 && !Pause.isPaused())
 		{
 			animals = 5;
 			dolphinTimer = 0f;;
@@ -92,7 +92,7 @@ public class PlayerState : MonoBehaviour {
 			audioSources[4].Play();
 			i = 4;
 		}
-		else if (Input.GetKeyDown ("6") && animals != 6 && !Pause.getPaused())
+		else if (Input.GetKeyDown ("6") && animals != 6 && !Pause.isPaused())
 		{
 			animals = 6;
 			dolphinTimer = 0f;
