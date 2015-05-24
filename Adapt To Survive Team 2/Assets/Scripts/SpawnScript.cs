@@ -54,6 +54,8 @@ public class SpawnScript : MonoBehaviour {
 	}	
 
 	void SpawnObstacle(){
+		if (Obstacles.Count <= 3)
+			newQueue ();
         int Objects = 0;
 		int ObjectLimit;
 		if(DifficultyLevel >= 4)
@@ -77,9 +79,6 @@ public class SpawnScript : MonoBehaviour {
 				GameObject newobj = (GameObject) Instantiate(CurrentObstacle, newvec, this.transform.rotation);
 			    SpawnedObjects.Add (newobj);
 			    Invoke ("DestroyObstacle", 10f);
-			
-			    if (Obstacles.Count <= 3)
-				    newQueue ();
 
 			    Objects+=1;
 			    LastPosition.Add(LanePos);
