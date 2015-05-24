@@ -17,7 +17,7 @@ public class PlayerState : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		if (Input.GetKeyDown ("1") && animals != 1) 
+		if ((Input.GetKeyDown(KeyCode.U) || Input.GetKeyDown ("1")) && animals != 1) 
 		{
 			animals = 1;
 			dolphinTimer = 0f;
@@ -25,7 +25,7 @@ public class PlayerState : MonoBehaviour {
             theStateMachine.SetInteger(Parameters.State, 1);
             updateSpeed(4);
 		}
-		else if (Input.GetKeyDown ("2") && animals != 2)
+        else if ((Input.GetKeyDown(KeyCode.I) || Input.GetKeyDown("2")) && animals != 2)
 		{
 			animals = 2;
 			dolphinTimer = 0f;
@@ -33,7 +33,7 @@ public class PlayerState : MonoBehaviour {
             theStateMachine.SetInteger(Parameters.State, 2);
             updateSpeed(3.5f);
 		}
-		else if (Input.GetKeyDown ("3") && animals != 3)
+        else if ((Input.GetKeyDown(KeyCode.O) || Input.GetKeyDown("3")) && animals != 3)
 		{
 			animals = 3;
 
@@ -43,7 +43,7 @@ public class PlayerState : MonoBehaviour {
             theStateMachine.SetInteger(Parameters.State, 3);
             updateSpeed(3f);
 		}
-		else if (Input.GetKeyDown ("4") && animals != 4)
+        else if ((Input.GetKeyDown(KeyCode.J) || Input.GetKeyDown("4")) && animals != 4)
 		{
 			animals = 4;
 			dolphinTimer = 0f;
@@ -51,7 +51,7 @@ public class PlayerState : MonoBehaviour {
             theStateMachine.SetInteger(Parameters.State, 4);
             updateSpeed(4);
 		}
-		else if (Input.GetKeyDown ("5") && animals != 5)
+        else if ((Input.GetKeyDown(KeyCode.K) || Input.GetKeyDown("5")) && animals != 5)
 		{
 			animals = 5;
 			dolphinTimer = 0f;;
@@ -60,7 +60,7 @@ public class PlayerState : MonoBehaviour {
             updateSpeed(3.5f);
 
 		}
-		else if (Input.GetKeyDown ("6") && animals != 6)
+        else if ((Input.GetKeyDown(KeyCode.L) || Input.GetKeyDown("6")) && animals != 6)
 		{
 			animals = 6;
 			dolphinTimer = 0f;
