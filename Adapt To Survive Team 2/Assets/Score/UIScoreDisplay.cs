@@ -14,7 +14,6 @@ public class UIScoreDisplay : MonoBehaviour {
         if (text == null)
             text = GetComponent<Text>(); //the menu starts inactive
         Debug.Log(text);
-        int test2 = ScoreScript.Highscore;
         text.text = "High Score : " + ScoreScript.Highscore.ToString();
         if (ScoreScript.HighscoreBeaten)
             text.color = Color.green;
