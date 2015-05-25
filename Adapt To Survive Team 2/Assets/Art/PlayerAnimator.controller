@@ -77,7 +77,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b77b60240f74e494793fcfcc4e0f6951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: .310344785, b: 0, a: .392156869}
+  color: {r: 1, g: .310344785, b: 0, a: .490196079}
   sprite: {fileID: 21300000, guid: 1e0bf9822f16cdc488cd43ea7979e244, type: 3}
 --- !u!114 &11454130
 MonoBehaviour:
@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b77b60240f74e494793fcfcc4e0f6951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: .392156869}
+  color: {r: .852941155, g: .951318443, b: 1, a: .392156869}
   sprite: {fileID: 21300000, guid: 872d6e28043ef3746ba4d3ef3165504d, type: 3}
 --- !u!114 &11473186
 MonoBehaviour:
@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b77b60240f74e494793fcfcc4e0f6951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 0, g: .917241335, b: 1, a: .392156869}
+  color: {r: 0, g: .586206675, b: 1, a: .490196079}
   sprite: {fileID: 21300000, guid: 1fe494d004dc41c499b2778fb9a7e888, type: 3}
 --- !u!114 &11499916
 MonoBehaviour:
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b77b60240f74e494793fcfcc4e0f6951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: .309803933, b: .972549021, a: .392156869}
+  color: {r: 1, g: .0862745121, b: .458823532, a: .490196079}
   sprite: {fileID: 21300000, guid: bad25bf4f23d936489bed63db8365961, type: 3}
 --- !u!1101 &110115610
 AnimatorStateTransition:
