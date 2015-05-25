@@ -8,14 +8,14 @@ public class SpawnScript : MonoBehaviour {
 	int DifficultyLevel = 0;
 	public List<GameObject> Objects;
 	public List<GameObject> SpawnedObjects;
-	public float SpawnRate = 3f;
+	public float SpawnRate = 2f;
 	int CurrentTime = 0;
 	List<int> Lanes;
 
 	void Start () {
 		Obstacles = new Queue<GameObject> ();
 		newQueue ();
-		InvokeRepeating ("SpawnObstacle",2f, SpawnRate);
+		InvokeRepeating ("SpawnObstacle",1f, SpawnRate);
 		InvokeRepeating ("TimeControl",0f, 1f);
 	}
 
