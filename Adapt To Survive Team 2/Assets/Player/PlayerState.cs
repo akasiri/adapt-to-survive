@@ -25,7 +25,7 @@ public class PlayerState : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		if (Input.GetKeyDown ("1") && animals != 1 && !Pause.isPaused()) 
+		if ((Input.GetKeyDown ("1") || Input.GetKeyDown("[1]")) && animals != 1 && !Pause.isPaused()) 
 
 		{
 			animals = 1;
@@ -36,7 +36,7 @@ public class PlayerState : MonoBehaviour {
             aud.clip = animalSounds[0];
             aud.Play();
 		}
-		else if (Input.GetKeyDown ("2") && animals != 2 && !Pause.isPaused())
+		else if ((Input.GetKeyDown ("2") || Input.GetKeyDown("[2]")) && animals != 2 && !Pause.isPaused())
 		{
 			animals = 2;
 			dolphinTimer = 0f;
@@ -47,7 +47,7 @@ public class PlayerState : MonoBehaviour {
             aud.clip = animalSounds[1];
             aud.Play();
 		}
-		else if (Input.GetKeyDown ("3") && animals != 3 && !Pause.isPaused())
+		else if ((Input.GetKeyDown ("3") || Input.GetKeyDown ("[3]")) && animals != 3 && !Pause.isPaused())
 		{
 			animals = 3;
 
@@ -60,7 +60,7 @@ public class PlayerState : MonoBehaviour {
             aud.clip = animalSounds[2];
             aud.Play();
 		}
-		else if (Input.GetKeyDown ("4") && animals != 4 && !Pause.isPaused())
+		else if ((Input.GetKeyDown ("4") || Input.GetKeyDown ("[4]")) && animals != 4 && !Pause.isPaused())
 		{
 			animals = 4;
 			dolphinTimer = 0f;
@@ -71,7 +71,7 @@ public class PlayerState : MonoBehaviour {
             aud.clip = animalSounds[3];
             aud.Play();
 		}
-		else if (Input.GetKeyDown ("5") && animals != 5 && !Pause.isPaused())
+		else if ((Input.GetKeyDown ("5") || Input.GetKeyDown ("[5]")) && animals != 5 && !Pause.isPaused())
 		{
 			animals = 5;
 			dolphinTimer = 0f;;
@@ -82,7 +82,7 @@ public class PlayerState : MonoBehaviour {
             aud.clip = animalSounds[4];
             aud.Play();
 		}
-		else if (Input.GetKeyDown ("6") && animals != 6 && !Pause.isPaused())
+		else if ((Input.GetKeyDown ("6") || Input.GetKeyDown ("[6]")) && animals != 6 && !Pause.isPaused())
 		{
 			animals = 6;
 			dolphinTimer = 0f;
