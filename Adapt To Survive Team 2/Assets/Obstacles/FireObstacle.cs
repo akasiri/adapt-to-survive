@@ -12,6 +12,7 @@ public class FireObstacle : Obstacle
     {
         GetComponent<AudioSource>().Play();
         StartCoroutine(setFire(0.5f));
+        StartCoroutine(ScreenShake.RandomShake(0.25f, 0.1f));
     }
 
     void OnTriggerExit2D(Collider2D other)

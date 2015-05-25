@@ -10,6 +10,7 @@ public class WaterObstacle : Obstacle {
         
         GameObject player = GameObject.FindGameObjectWithTag(Tags.Player);
         particleHolder = player.transform.Find("SplashEffect").gameObject;
+        StartCoroutine(ScreenShake.SmoothShake(1f, 0.1f, 3));
         particleHolder.SetActive(true);
         particle = particleHolder.GetComponent<ParticleSystem>();
         particle.startColor = new Color(1, 1, 1, 0.4f);
