@@ -8,6 +8,7 @@ public class PlayerState : MonoBehaviour {
     public GameObject tip;
 	private float dolphinTimer;
 
+    private ParticleSystem change;
 	public AudioClip[] animalSounds;
 
     private AudioSource aud;
@@ -15,6 +16,7 @@ public class PlayerState : MonoBehaviour {
 
     void Start()
     {
+        change = transform.Find("SpawnEffect").GetComponent<ParticleSystem>();
         aud = transform.Find("Audio").GetComponent<AudioSource>();
         Pause.staticUnPause();
         theStateMachine = GetComponent<Animator>();
@@ -105,6 +107,7 @@ public class PlayerState : MonoBehaviour {
 
     void updateSpeed(float speed)
     {
+        change.Play();//shouldn't really be in this method, but I'm lazy
         Obstacle.speed = speed;
         foreach (string tag in Tags.Obstacles)
         {
