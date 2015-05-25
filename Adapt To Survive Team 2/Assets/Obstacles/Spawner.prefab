@@ -23,7 +23,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 196610}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.662782609, y: 8.69693947, z: 8.39157963}
+  m_LocalPosition: {x: 2, y: 5.51000023, z: 8.39000034}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -39,6 +39,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db1e6246163210149a0aad63861656cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DifficultyIncreaseInterval: 15
   Objects:
   - {fileID: 141132, guid: b9523ccb1b9fbf84590016adb5ce3f4d, type: 2}
   - {fileID: 163966, guid: 7cd5d0a64f3c7384a85663cfe4696d44, type: 2}
@@ -46,6 +47,8 @@ MonoBehaviour:
   - {fileID: 164164, guid: 4c8fc0c84ba314742b6c49ee908d7ccb, type: 2}
   - {fileID: 141072, guid: 6d9c695e49a8cea44adbe31b39790e65, type: 2}
   - {fileID: 169468, guid: fcbe98914afca6f4ea26d5392ecd9ca1, type: 2}
+  - {fileID: 157828, guid: f532a76fc868e4c499b4b6944299ec15, type: 2}
+  SpawnedObjects: []
   SpawnRate: 3
 --- !u!1001 &100100000
 Prefab:
