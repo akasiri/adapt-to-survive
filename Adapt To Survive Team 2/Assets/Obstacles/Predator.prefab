@@ -33,6 +33,7 @@ GameObject:
   - 95: {fileID: 9551098}
   - 212: {fileID: 21269346}
   - 82: {fileID: 8254882}
+  - 114: {fileID: 11465838}
   m_Layer: 0
   m_Name: Predator
   m_TagString: Predator
@@ -76,7 +77,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 169468}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.98000002, y: 8.09000015, z: 0}
+  m_LocalPosition: {x: 2.1400001, y: 4.67000008, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 488214}
@@ -330,6 +331,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0efd0413b6185f4786ab5a7b766c6e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11465838
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 169468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3598503ee90b4a7458aea0b552a4edfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blood: {fileID: 171188, guid: 89e18c47544222e43a3db12f3012e6e7, type: 2}
 --- !u!198 &19865556
 ParticleSystem:
   m_ObjectHideFlags: 1

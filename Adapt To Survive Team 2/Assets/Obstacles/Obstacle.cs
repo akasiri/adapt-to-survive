@@ -37,6 +37,9 @@ public class Obstacle : MonoBehaviour
 			case Tags.Predator:
 				objectWeakness = 6;
 				break;
+			default:
+				objectWeakness = -1;
+				break;
 		}
 	}
 
@@ -63,6 +66,10 @@ public class Obstacle : MonoBehaviour
                 ScoreScript.AddPoints(5, this.tag);
                 OnDestroy();
                 
+				if (objectWeakness == 6)
+				{
+					GetComponent<PredatorDeath>().Explode();
+				}
             }
 		}
 	}
