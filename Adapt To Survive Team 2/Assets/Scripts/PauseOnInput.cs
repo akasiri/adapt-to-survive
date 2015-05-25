@@ -17,18 +17,25 @@ public class PauseOnInput : MonoBehaviour {
     }
 
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Space) && !gameOver)
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Space))
         {
-            if (Pause.isPaused())
+            if (gameOver)
             {
-                Pause.staticUnPause();
-                OptionsPanel.SetActive(false);
+                transform.parent.Find("GameOverDisplay/Restart").GetComponent<Restart>().RestartLevel();
             }
             else
             {
-                Pause.staticPause();
-                OptionsPanel.SetActive(true);
-                Highscore.DoUpdate();
+                if (Pause.isPaused())
+                {
+                    Pause.staticUnPause();
+                    OptionsPanel.SetActive(false);
+                }
+                else
+                {
+                    Pause.staticPause();
+                    OptionsPanel.SetActive(true);
+                    Highscore.DoUpdate();
+                }
             }
         }
 	}
