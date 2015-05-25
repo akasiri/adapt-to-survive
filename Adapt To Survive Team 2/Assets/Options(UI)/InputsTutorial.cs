@@ -14,21 +14,40 @@ public class InputsTutorial : MonoBehaviour {
         {
             panels[i] = Instantiate(PrefabPanels[i-1]) as GameObject;
             panels[i].transform.SetParent(this.transform);
-            panels[i].transform.localPosition = new Vector3(0, i * (((RectTransform)(panels[i].transform)).rect.height + 10), 0);
+            panels[i].transform.localPosition = new Vector3(0, -i * (((RectTransform)(panels[i].transform)).rect.height + 10), 0);
         }
 
         //default is animal #1
         panels[0] = panels[1];
         panels[1] = null;
+        repositionUI();
         //(Re)(panels[0].transform).
 	}
 
     public static void setActive(int index)
     {
+        ((RectTransform)(thi.panels[0].transform)).sizeDelta = new Vector2(((RectTransform)(thi.panels[0].transform)).rect.width * 0.8f, ((RectTransform)(thi.panels[0].transform)).rect.height);
+        ((RectTransform)(thi.panels[index].transform)).sizeDelta = new Vector2(((RectTransform)(thi.panels[index].transform)).rect.width * 1.25f, ((RectTransform)(thi.panels[index].transform)).rect.height);
         GameObject temp = thi.panels[0];
-        thi.StartCoroutine(CameraBasedPosition.LerpTo(thi.panels[0], thi.panels[index].transform.position));
-        thi.StartCoroutine(CameraBasedPosition.LerpTo(thi.panels[index], thi.panels[0].transform.position));
         thi.panels[0] = thi.panels[index];
-        thi.panels[index] = thi.panels[0];
+        thi.panels[index] = null;
+        thi.panels[active] = temp;
+        active = index;
+        thi.repositionUI();
+    }
+
+    void repositionUI()
+    {
+        int i = 0;
+        foreach (GameObject obj in panels)
+        {
+            if (obj != null)
+            {
+                Debug.Log(-i * (((RectTransform)(obj.transform)).rect.height + 10));
+                obj.GetComponent<LerpTo>().DoLerpTo(new Vector3(0, -i * (((RectTransform)(obj.transform)).rect.height + 10), 0));
+                
+            }
+            i++;
+        }
     }
 }
