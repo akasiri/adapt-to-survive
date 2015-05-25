@@ -8,7 +8,7 @@ public class FireObstacle : Obstacle
 
 
 
-    protected override void OnDestroy()
+    protected override void OnTriggerDestroy()
     {
         GetComponent<AudioSource>().Play();
         StartCoroutine(setFire(0.5f));

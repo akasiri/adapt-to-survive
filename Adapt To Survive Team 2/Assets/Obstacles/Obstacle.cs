@@ -64,10 +64,10 @@ public class Obstacle : MonoBehaviour
             {
                 triggered = true; //this code will only be called once per object
                 ScoreScript.AddPoints(5, this.tag);
-                OnDestroy();
+                OnTriggerDestroy();
             }
 		}
 	}
-	protected virtual void OnDestroy(){
+	protected virtual void OnTriggerDestroy(){
 	}
 }

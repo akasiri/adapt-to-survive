@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PauseOnInput : MonoBehaviour {
+public class PauseOnInput : MonoBehaviour
+{
     private GameObject OptionsPanel;
     private UIScoreDisplay Highscore;
     private static bool gameOver = false;
@@ -16,20 +17,28 @@ public class PauseOnInput : MonoBehaviour {
         gameOver = game;
     }
 
-	void Update () {
-        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Space) && !gameOver)
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Space))
         {
-            if (Pause.isPaused())
+            if (gameOver)
             {
-                Pause.staticUnPause();
-                OptionsPanel.SetActive(false);
+                transform.parent.Find("GameOverDisplay/Restart").GetComponent<Restart>().RestartLevel();
             }
             else
             {
-                Pause.staticPause();
-                OptionsPanel.SetActive(true);
-                Highscore.DoUpdate();
+                if (Pause.isPaused())
+                {
+                    Pause.staticUnPause();
+                    OptionsPanel.SetActive(false);
+                }
+                else
+                {
+                    Pause.staticPause();
+                    OptionsPanel.SetActive(true);
+                    Highscore.DoUpdate();
+                }
             }
         }
-	}
+    }
 }

@@ -6,7 +6,7 @@ public class WaterObstacle : Obstacle {
     private GameObject particleHolder;
     private bool played = false;
 	// Update is called once per frame
-	protected override void OnDestroy () {
+	protected override void OnTriggerDestroy () {
         
         GameObject player = GameObject.FindGameObjectWithTag(Tags.Player);
         particleHolder = player.transform.Find("SplashEffect").gameObject;

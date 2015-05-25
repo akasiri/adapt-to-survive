@@ -3,7 +3,7 @@ using System.Collections;
 
 public class TreeObstacle : Obstacle
 {
-    protected override void OnDestroy()
+    protected override void OnTriggerDestroy()
     {
 		GetComponent<AudioSource>().Play();
     }

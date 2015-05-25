@@ -9,7 +9,7 @@ public class BoulderScript : Obstacle {
         setObjectWeakness();
     }
 
-    protected override void OnDestroy()
+    protected override void OnTriggerDestroy()
     {
         GetComponent<AudioSource>().Play();
         transform.Find("BoulderCrush").GetComponent<ParticleSystem>().Play();
