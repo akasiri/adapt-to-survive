@@ -65,11 +65,6 @@ public class Obstacle : MonoBehaviour
                 triggered = true; //this code will only be called once per object
                 ScoreScript.AddPoints(5, this.tag);
                 OnDestroy();
-                
-				if (objectWeakness == 6)
-				{
-					GetComponent<PredatorDeath>().Explode();
-				}
             }
 		}
 	}
