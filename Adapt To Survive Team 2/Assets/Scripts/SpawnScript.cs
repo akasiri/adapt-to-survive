@@ -44,13 +44,13 @@ public class SpawnScript : MonoBehaviour {
 
 			CancelInvoke("SpawnObstacle");
 
-			InvokeRepeating ("SpawnObstacle",0f, SpawnRate);
+			InvokeRepeating ("SpawnObstacle",0.5f, SpawnRate);
 		}
 	}
 
 	void DestroyObstacle(){
 		SpawnedObjects.Remove (SpawnedObjects[0]);
-		Destroy(SpawnedObjects[0],0f);
+		Destroy(SpawnedObjects[0]);
 	}	
 
 	void SpawnObstacle(){
