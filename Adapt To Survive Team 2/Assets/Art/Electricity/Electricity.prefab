@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectWeakness: 1
-  tip: {fileID: 0}
+  tip: {fileID: 189854, guid: 8a460e409266205419d09bf415cb42f6, type: 2}
 --- !u!114 &11460140
 MonoBehaviour:
   m_ObjectHideFlags: 1

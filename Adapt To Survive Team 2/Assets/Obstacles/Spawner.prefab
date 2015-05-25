@@ -48,6 +48,7 @@ MonoBehaviour:
   - {fileID: 141072, guid: 6d9c695e49a8cea44adbe31b39790e65, type: 2}
   - {fileID: 169468, guid: fcbe98914afca6f4ea26d5392ecd9ca1, type: 2}
   - {fileID: 157828, guid: f532a76fc868e4c499b4b6944299ec15, type: 2}
+  - {fileID: 135444, guid: 9686133ea72168d4fae8ebdd1804c095, type: 2}
   SpawnedObjects: []
   SpawnRate: 3
 --- !u!1001 &100100000
